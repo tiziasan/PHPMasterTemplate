@@ -30,7 +30,7 @@ class Component {
 
         foreach ($components as $component) {
             $content = (get_class($component) !== "Component")
-                ? "Error, incorrect type - expected Template."
+                ? "Error, incorrect type, expected Component."
                 : $component->output();
             $output .= $content . $separator;
         }
