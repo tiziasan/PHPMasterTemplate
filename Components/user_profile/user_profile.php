@@ -1,18 +1,20 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors","On");
 
-
-include("./../../component.php");
-
+include_once "/Applications/MAMP/htdocs/PHPMasterTemplate/component.php";
 class user_profile {
+
         function show()
         {
-            $layout = new Component("./../frame/frame.html");
+            $layout = new Component("/Applications/MAMP/htdocs/PHPMasterTemplate/Components/frame/frame.html");
             echo $layout->output();
         }
+
 }
 
 $profile = new user_profile();
-$profile->show();
+
 
 
 
