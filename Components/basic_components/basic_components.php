@@ -1,13 +1,21 @@
 <?php
 class basic_components{
 
-    function setH1($string){
-        $string = "<h1>".$string."</h1>";
-        echo $string;
+    public function __construct()
+    {
+        $style = "<head>
+                    <link rel=\"stylesheet\" href=\"/Applications/MAMP/htdocs/PHPMasterTemplate/Components/basic_components/style.css\">
+                  </head>";
+        echo $style;
     }
 
-    function setH2($string){
-        $string = "<h2>".$string."</h2>";
-        echo $string;
+    function setH1($body,$name){
+        $component = "<h1 id = '". $name .  "'>".$body."</h1>";
+        echo $component;
+    }
+
+    function setH2($body,$name){
+        $body = "<h2 id = '". $name .  "'>".$body."</h2>";
+        echo $body;
     }
 }
