@@ -4,7 +4,7 @@ class basic_components{
     public function __construct()
     {
         $style = "<head>
-                    <link rel=\"stylesheet\" href=\"/Applications/MAMP/htdocs/PHPMasterTemplate/Components/basic_components/style.css\">
+                    <link rel=\"stylesheet\" type=\"text/css\" href=\"/Applications/MAMP/htdocs/PHPMasterTemplate/Components/basic_components/style.css\">
                   </head>";
         echo $style;
     }
