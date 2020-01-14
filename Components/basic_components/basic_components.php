@@ -50,6 +50,28 @@ class basic_components{
         echo $component;
 
     }
+    function setImg($attributes){
+        $component = "<img".$attributes.">";
+        echo $component
+
+    }
+
+    function setLabel($body, $attributes){
+        $component = "<label ".$attributes.">".$body."</label>";
+        echo $component;
+    }
+
+    function setAReference($body, $attributes){
+        $component = "<a ".$attributes.">".$body."</a>";
+        echo $component;
+    }
+
+    function setOption($body, $attributes){
+        $component = "<option ".$attributes.">".$body."</option>";
+        echo $component;
+    }
+
+
 
     //Passare oggetti come attributo
 
