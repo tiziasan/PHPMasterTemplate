@@ -8,5 +8,9 @@ include ("/Applications/MAMP/htdocs/PHPMasterTemplate/Components/basic_component
 
 
 $basic = new basic_components();
-$basic->setH1("ciao", "prova");
+$basic->setHead("prova");
+$basic->setH1("ciao", "id='prova'");
+$basic->setButton("ciao", null);
+$basic->setH6("ciao", null);
+
 
