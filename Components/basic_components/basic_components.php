@@ -3,6 +3,7 @@ class Basic_components{
 
     function setHead($title){
         $component = "<head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
+
         echo $component;
     }
 
