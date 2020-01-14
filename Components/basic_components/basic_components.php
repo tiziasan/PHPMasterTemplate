@@ -2,7 +2,7 @@
 class basic_components{
 
     function setHead($title){
-        $component = "<head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
+        $component = "<head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/body_style.css\"></head>";
         echo $component;
     }
 
@@ -52,7 +52,7 @@ class basic_components{
     }
     function setImg($attributes){
         $component = "<img".$attributes.">";
-        echo $component
+        echo $component;
 
     }
 
@@ -70,6 +70,40 @@ class basic_components{
         $component = "<option ".$attributes.">".$body."</option>";
         echo $component;
     }
+
+    function setParagraph($body, $attributes){
+        $component = "<p ".$attributes.">".$body."</p>";
+        echo $component;
+    }
+
+    function setQuote($body, $attributes){
+        $component = "<q ".$attributes.">".$body."</q>";
+        echo $component;
+    }
+
+    function setScript($body, $attributes){
+        $component = "<script ".$attributes.">".$body."</script>";
+        echo $component;
+    }
+
+    function setTextArea($body, $attributes){
+        $component = "<textarea ".$attributes.">".$body."</textarea>";
+        echo $component;
+    }
+
+    function setListItem($body, $attributes){
+        $component = "<li ".$attributes.">".$body."</li>";
+        echo $component;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
