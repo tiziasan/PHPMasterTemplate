@@ -2,32 +2,22 @@
 
 class recipe_card{
 
-    function showRecipeCard(){
+    function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$imgURL = "http://s6.favim.com/orig/65/food-text-Favim.com-601972.jpg"){
         $component = "<div class=\"card\">
    <div class=\"header\">
-      <div class=\"icon\">
-      <a href=\"#\"><i class=\"fa fa-heart-o\"></i></a>
-      </div>
+    <img src='".$imgURL."'>
    </div>
    <div class=\"text\">
       <h1 class=\"food\">
-         Chinese Noodles
+         ".$recipeName."
       </h1>
-      <i class=\"fa fa-clock-o\"> 15 Mins</i>
-      <i class=\"fa fa-users\"> Serves 2</i>
-      
-      <div class=\"stars\">
-         <li>
-            <a href=\"#\"><i class=\"fa fa-star\"></i></a>
-            <a href=\"#\"><i class=\"fa fa-star\"></i></a>
-            <a href=\"#\"><i class=\"fa fa-star\"></i></a>
-            <a href=\"#\"><i class=\"fa fa-star\"></i></a>
-            <a href=\"#\"><i class=\"fa fa-star-o\"></i></a>
-         </li>
-      </div>
-      <p class=\"info\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+      <i class=\"fa fa-clock-o\">".$time."</i>
+      <i class=\"fa fa-users\"> ".$serving."</i>
+      <i class=\"difficult\"> ".$difficult."</i>
+
+      <p class=\"info\">".$description."</p>
    </div>
-   <a href=\"#\" class=\"btn\">Let's Cook!</a>
+   <a href=\"#\" class=\"btn\">".$btnName."</a>
 </div>";
             echo $component;
     }

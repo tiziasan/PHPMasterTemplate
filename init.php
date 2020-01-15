@@ -16,8 +16,7 @@ $basic->setHead("prova1");
 //$basic->setTextArea('ipse lorum...', null);
 
 $card = new recipe_card();
-$card->showRecipeCard();
-
+$card -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
 
 
 
