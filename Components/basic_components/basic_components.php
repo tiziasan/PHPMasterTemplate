@@ -4,6 +4,7 @@ class Basic_components{
     function setHead($title){
         $component = "<head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/three_column_div/three_column_div_style.css\">";
 
         echo $component;
     }
@@ -97,6 +98,7 @@ class Basic_components{
         $component = "<li ".$attributes.">".$body."</li>";
         echo $component;
     }
+
 
 
 
