@@ -26,7 +26,7 @@ $basic->setHead("prova1");
 //$card3 = new recipe_card();
 //$card3 = $card3 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
 //
-//$div3col = new three_column_div();
+//$div3col = new four_column_div();
 //$div3col ->setThreeColumnDiv($card1, $card2, $card3);
 //
 //$card4 = new recipe_card();
@@ -38,11 +38,11 @@ $basic->setHead("prova1");
 //$card6 = new recipe_card();
 //$card6 = $card6 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
 //
-//$div3col2 = new three_column_div();
+//$div3col2 = new four_column_div();
 //$div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
 
 $map = new map();
-$map->setMap("Roma");
+$map->setMap("poggio moiano");
 
 
 
