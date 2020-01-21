@@ -10,7 +10,6 @@ class Basic_components{
 
         echo $component;
     }
-
     function setH1($body,$attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
         echo $component;
