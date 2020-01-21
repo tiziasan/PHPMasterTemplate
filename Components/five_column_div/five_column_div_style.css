@@ -1,0 +1,12 @@
+.column-5 {
+    float: left;
+    width: 20%;
+    padding: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
