@@ -20,16 +20,20 @@ html, body {
 }
 
 
-
 .card {
     position: relative;
     background: #fff;
-    max-width: 100%;
+    max-width: 500px;
     margin: 20px auto;
     box-shadow: 0px 0px 30px 2px #000;
+    word-break: break-all;
+
 }
 .card .header {
-    min-height: 50%;
+    background-size: cover;
+    min-height: 350px;
+    word-break: break-all;
+
 }
 .card .header .icon a .fa-heart-o {
     position: absolute;
@@ -39,9 +43,10 @@ html, body {
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
-    padding: 3%;
+    padding: 15px;
     border-radius: 50%;
     box-shadow: 0px 5px 30px 1px #17BEBB;
+    word-break: break-all;
 
 }
 .card .text .food {
@@ -50,13 +55,12 @@ html, body {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin: 2% 5%;
+    margin: 5px 30px;
     word-break: break-all;
-
 }
 .card .text .fa-clock-o {
     color: #9B9B9B;
-    margin: 0 5%;
+    margin: 0 30px;
     word-break: break-all;
 
 }
@@ -65,17 +69,24 @@ html, body {
     word-break: break-all;
 
 }
-
-.difficult{
+.card .text .fa-difficult {
     color: #9B9B9B;
-    margin-left: 5%;
+    margin-left: 7%;
     word-break: break-all;
 
 }
+.card .stars {
+    margin: 10px 30px;
+    word-break: break-all;
 
+}
+.card .stars li a i {
+    color: #FFE500;
+    word-break: break-all;
 
+}
 .card .info {
-    margin: 3% 5%;
+    margin: 10px 30px;
     word-break: break-all;
 
 }
@@ -87,7 +98,7 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: center;
-    padding: 2%;
+    padding: 10px;
     transition: 250ms;
     word-break: break-all;
 
@@ -98,4 +109,3 @@ html, body {
     word-break: break-all;
 
 }
-

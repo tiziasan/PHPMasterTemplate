@@ -9,43 +9,6 @@ include "Components/three_column_div/three_column_div.php";
 include "Components/map/map.php";
 include "Components/header_menu/header_menu.php";
 
-
-$basic = new Basic_components();
-$basic->setHead("prova1");
-//$basic->setH1("ciao", "id='prova'");
-//$basic->setLabel("ciao");
-//$basic->setInput("type='checkbox'");
-//$basic->setTextArea('ipse lorum...', null);
-
-//$card1 = new recipe_card();
-//$card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$card2 = new recipe_card();
-//$card2 = $card2 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$card3 = new recipe_card();
-//$card3 = $card3 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$div3col = new four_column_div();
-//$div3col ->setThreeColumnDiv($card1, $card2, $card3);
-//
-//$card4 = new recipe_card();
-//$card4 = $card4 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$card5 = new recipe_card();
-//$card5 = $card5 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$card6 = new recipe_card();
-//$card6 = $card6 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!");
-//
-//$div3col2 = new four_column_div();
-//$div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
-
-$map = new map();
-$map->setMap("poggio moiano");
-
-
-
 $arrayButton = array(
     "home" => "bar",
     "profile" => "foo",
@@ -53,9 +16,37 @@ $arrayButton = array(
     "house" => "foo",
 );
 
+$basic = new Basic_components();
+$basic->setHead("prova1");
 
 $headerMenu = new header_menu();
 $headerMenu ->showHeaderMenu($arrayButton);
 
 
+$card1 = new recipe_card();
+$card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
 
+$card2 = new recipe_card();
+$card2 = $card2 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+
+$card3 = new recipe_card();
+$card3 = $card3 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+
+$div3col = new three_column_div();
+$div3col ->setThreeColumnDiv($card1, $card2, $card3);
+
+$card4 = new recipe_card();
+$card4 = $card4 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+
+$card5 = new recipe_card();
+$card5 = $card5 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+
+$card6 = new recipe_card();
+$card6 = $card6 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+
+$div3col2 = new three_column_div();
+$div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
+
+
+$map = new map();
+$map->setMap("poggio moiano");

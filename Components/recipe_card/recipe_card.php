@@ -2,23 +2,22 @@
 
 class recipe_card{
 
-    function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$imgURL = "http://s6.favim.com/orig/65/food-text-Favim.com-601972.jpg"){
-        $component = "<four_column_div class=\"card\">
-   <four_column_div class=\"header\">
-    <img src='".$imgURL."'>
-   </four_column_div>
-   <four_column_div class=\"text\">
+    function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$btnURL,$imgURL = "https://filecdn.nonsprecare.it/wp-content/uploads/2018/07/COME-CONSERVARE-IL-CIBO-IN-ESTATE.jpg"){
+        $component = "<div class=\"card\">
+   <img src='".$imgURL."'>
+      <a href=\"#\"><i class=\"fa fa-heart-o\"></i></a>
+   <div class=\"text\">
       <h1 class=\"food\">
          ".$recipeName."
       </h1>
       <i class=\"fa fa-clock-o\">".$time."</i>
-      <i class=\"fa fa-users\"> ".$serving."</i>
-      <i class=\"difficult\"> ".$difficult."</i>
-
+      <i class=\"fa fa-users\">".$serving."</i>
+      <i class=\"fa fa-difficult\">".$difficult."</i>
+      
       <p class=\"info\">".$description."</p>
-   </four_column_div>
-   <a href=\"#\" class=\"btn\">".$btnName."</a>
-</four_column_div>";
+   </div>
+   <a href=\"".$btnURL."\" class=\"btn\">". $btnName."</a>
+</div>";
             return $component;
     }
 }
