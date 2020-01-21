@@ -4,10 +4,10 @@ ini_set("display_errors","On");
 
 
 include "Components/basic_components/basic_components.php";
-//include("/Applications/MAMP/htdocs/PHPMasterTemplate/Components/user_profile/user_profile.php");
 include "Components/recipe_card/recipe_card.php";
 include "Components/three_column_div/three_column_div.php";
 include "Components/map/map.php";
+include "Components/header_menu/header_menu.php";
 
 
 $basic = new Basic_components();
@@ -43,6 +43,9 @@ $basic->setHead("prova1");
 
 $map = new map();
 $map->setMap("poggio moiano");
+
+$headerMenu = new header_menu();
+$headerMenu ->showHeaderMenu();
 
 
 
