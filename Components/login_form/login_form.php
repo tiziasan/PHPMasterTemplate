@@ -2,9 +2,9 @@
 
 class login_form{
 
-    function login() {
+    function login($attributes) {
    $component = "<div class=\"wrapper\">
-  <form class=\"login\">
+  <form class=\"login\" action=".$attributes.">
     <p class=\"title\">Log in</p>
     <input type=\"text\" placeholder=\"Username\" autofocus/>
     <i class=\"fa fa-user\"></i>
