@@ -1,30 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
-    font-variant-ligatures: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fafafa;
-}
-body::before,
-body::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-body * {
+* {
     box-sizing: inherit;
 }
-p, h1 {
-    margin: 0; padding: 0;
-}
-
-body, .text-light-black {
+ .text-light-black {
     color: rgba(0,0,0,0.6);
 }
 .text-black {
@@ -33,8 +10,6 @@ body, .text-light-black {
 .text-muted {
     color: rgba(0, 0, 0, 0.3);
 }
-
-
 
 .text-uppercase {
     text-transform: uppercase;
@@ -56,7 +31,6 @@ body, .text-light-black {
 .lts-2px {
     letter-spacing: 2px;
 }
-
 
 .w-full {
     width: 100%;
@@ -85,17 +59,6 @@ body, .text-light-black {
 .p-absolute {
     position: absolute
 }
-
-
-
-.bg-white {
-    background-color: #fff;
-}
-
-
-
-
-
 
 .small {
     font-size: 0.75rem;
@@ -127,9 +90,6 @@ body, .text-light-black {
     border-bottom: 5px solid #2196fe;
 }
 
-
-
-
 .clearfix::before,
 .clearfix::after {
     content: "";
@@ -143,12 +103,6 @@ body, .text-light-black {
     float: right;
 }
 
-
-
-
-
-
-/**Margin and padding utilities*/
 .mx-auto {
     margin-left: auto;
     margin-right: auto;

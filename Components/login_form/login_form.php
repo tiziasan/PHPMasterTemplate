@@ -2,28 +2,20 @@
 
 class login_form{
 
-    function login($email, $password)
-    {
-   $component = "<body>
-<div class=\"container\">
-	<section id=\"content\">
-		<form action=\"\">
-			<h1>Login Form</h1>
-			<div>
-				<input type=\"text\" placeholder=\"Username\" required=\"\" id=\"username\" />
-			</div>
-			<div>
-				<input type=\"password\" placeholder=\"Password\" required=\"\" id=\"password\" />
-			</div>
-			<div>
-				<input type=\"submit\" value=\"Log in\" />
-				<a href=\"#\">Lost your password?</a>
-				<a href=\"#\">Register</a>
-			</div>
-		</form><!-- form -->
-	</section><!-- content -->
-</div><!-- container -->
-</body>";
+    function login() {
+   $component = "<div class=\"wrapper\">
+  <form class=\"login\">
+    <p class=\"title\">Log in</p>
+    <input type=\"text\" placeholder=\"Username\" autofocus/>
+    <i class=\"fa fa-user\"></i>
+    <input type=\"password\" placeholder=\"Password\" />
+    <i class=\"fa fa-key\"></i>
+    <a href=\"#\">Forgot your password?</a>
+    <button>
+      <span class=\"state\">Log in</span>
+    </button>
+  </form>
+</div>";
     echo $component;
     }
 }
