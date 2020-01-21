@@ -7,6 +7,8 @@ class Basic_components{
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/profile_card/profile_card_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/header_menu/header_menu_style.css\">";
+
 
         echo $component;
     }
