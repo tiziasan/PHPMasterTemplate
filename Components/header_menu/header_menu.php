@@ -3,11 +3,18 @@
 class header_menu
 {
 
-    function showHeaderMenu()
+    function showHeaderMenu($arrayButton)
     {
+        $button = '';
+
+        foreach ($arrayButton as $k => $v) {
+
+            $button .= "<a href=\"".$v."\">".$k."</a>";
+
+        }
+
         $content = "<div class=\"navbar\">
-                      <a href=\"#home\">Home</a>
-                      <a href=\"#news\">News</a>
+                      ".$button."
                       <div class=\"dropdown\">
                         <button class=\"dropbtn\">Dropdown</button>
                         <div class=\"dropdown-content\">

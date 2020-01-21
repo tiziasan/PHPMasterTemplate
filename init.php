@@ -44,11 +44,18 @@ $basic->setHead("prova1");
 $map = new map();
 $map->setMap("poggio moiano");
 
+
+
+$arrayButton = array(
+    "home" => "bar",
+    "profile" => "foo",
+    "contact" => "bar",
+    "house" => "foo",
+);
+
+
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu();
-
-
-
+$headerMenu ->showHeaderMenu($arrayButton);
 
 
 
