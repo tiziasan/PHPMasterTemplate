@@ -65,11 +65,11 @@ $map3->setMap("università degli studi dell'aquila");
 //$div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 
 $profile = new profile_card();
-$profile = $profile ->createProfile("fons", "libero", "tutti", "liberi", "bo", "ciaone", "porororoor", "dada@dsa.it", "0994484", "098575849", "fsdfjsd");
+$profile = $profile ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
 $profile1 = new profile_card();
-$profile1 = $profile1 -> createProfile("fons", "libero", "tutti", "liberi", "bo", "ciaone", "porororoor", "dada@dsa.it", "0994484", "098575849", "fsdfjsd");
+$profile1 = $profile1 ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
 $profile2 = new profile_card();
-$profile2 = $profile2->createProfile("fons", "libero", "tutti", "liberi", "bo", "ciaone", "porororoor", "dada@dsa.it", "0994484", "098575849", "fsdfjsd");
+$profile2 = $profile2->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
 
 
 
