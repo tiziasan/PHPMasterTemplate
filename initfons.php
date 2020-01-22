@@ -72,5 +72,6 @@ $profile2 = new profile_card();
 $profile2 = $profile2->createProfile("fons", "libero", "tutti", "liberi", "bo", "ciaone", "porororoor", "dada@dsa.it", "0994484", "098575849", "fsdfjsd");
 
 
+
 $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($profile, $profile1, $profile2);
