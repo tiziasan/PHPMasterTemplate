@@ -37,7 +37,7 @@
     color: #ccc;
 }
 
-.title {
+.title-login{
     color: #444;
     font-size: 1.2em;
     font-weight: bold;
@@ -69,4 +69,10 @@
 
 .state{
     font-size: 2.0em;
+}
+.a-login{
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    word-break: break-all;
 }
