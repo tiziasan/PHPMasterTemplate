@@ -1,5 +1,7 @@
 .gmap_canvas{
-    height: 500px;
-    width: 600px;
-
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
 }
