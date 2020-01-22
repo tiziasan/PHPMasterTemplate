@@ -8,19 +8,20 @@ include "Components/recipe_card/recipe_card.php";
 include "Components/three_column_div/three_column_div.php";
 include "Components/map/map.php";
 include "Components/header_menu/header_menu.php";
+include "Components/news/news.php";
 
 $arrayButton = array(
-    "home" => "bar",
-    "profile" => "foo",
-    "contact" => "bar",
-    "house" => "foo",
+    "Home" => "http://www.google.it",
+    "Profile" => "http://www.google.it",
+    "Contact" => "http://www.google.it",
+    "House" => "http://www.google.it",
 );
 
 $basic = new Basic_components();
-$basic->setHead("prova1");
+$basic->setHead("PHP Template Engine");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton);
+$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it");
 
 
 $card1 = new recipe_card();
@@ -48,5 +49,16 @@ $div3col2 = new three_column_div();
 $div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
 
 
-$map = new map();
-$map->setMap("poggio moiano");
+
+$map3 = new map();
+$map3->setMap("università degli studi dell'aquila");
+
+$news = new news();
+$news->insertNews("ciao", "ciao", "ciao");
+$news1 = new news();
+$news1->insertNews("ciao", "ciao", "ciao");
+$news2 = new news();
+$news2->insertNews("ciao", "ciao", "ciao");
+
+$div3col3 = new three_column_div();
+$div3col3 ->setThreeColumnDiv($news, $news1, $news2);
