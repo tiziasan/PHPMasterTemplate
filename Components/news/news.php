@@ -4,7 +4,7 @@ class news{
 
     function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL = "https://www.admassociati.it/wp-content/uploads/2017/08/news.jpg"){
         $component = "<div class=\"card\">
-   <img src='".$imgURL."'>
+   <img class='img-news' src='".$imgURL."'>
       <a href=\"#\"><i class=\"fa fa-heart-o\"></i></a>
    <div class=\"text\">
       <h1 class=\"food\">

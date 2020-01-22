@@ -51,7 +51,17 @@ $div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
 
 
 $map3 = new map();
-$map3->setMap("università degli studi dell'aquila");
+$map3 = $map3 ->setMap("università degli studi dell'aquila");
+$map2 = new map();
+$map2 = $map2 ->setMap("università degli studi dell'aquila");
+$map1 = new map();
+$map1 = $map1->setMap("università degli studi dell'aquila");
+$map4 = new map();
+$map4->printMap("l'aquila");
+
+$div3col4 = new three_column_div();
+$div3col4 ->setThreeColumnDiv($map1, $map2, $map3);
+
 
 $news = new news();
 $news = $news->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
