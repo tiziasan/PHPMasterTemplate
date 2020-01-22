@@ -55,6 +55,7 @@
 }
 .card-heading {
     font-size: 2.25rem;
+    word-break: break-all;
 }
 .styled-link {
     text-decoration: none;

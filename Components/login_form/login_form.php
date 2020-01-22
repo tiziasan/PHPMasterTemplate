@@ -2,7 +2,7 @@
 
 class login_form{
 
-    function login($attributes) {
+    function login($attributes = null) {
    $component = "<div class=\"wrapper\">
   <form class=\"login\" ".$attributes.">
     <p class=\"title\">Log in</p>
@@ -16,6 +16,6 @@ class login_form{
     </button>
   </form>
 </div>";
-    echo $component;
+    return $component;
     }
 }
