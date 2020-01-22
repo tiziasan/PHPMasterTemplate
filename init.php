@@ -54,11 +54,11 @@ $map3 = new map();
 $map3->setMap("università degli studi dell'aquila");
 
 $news = new news();
-$news = $news->insertNews("ciao", "ciao", "ciao");
+$news = $news->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
 $news1 = new news();
-$news1 = $news1->insertNews("ciao", "ciao", "ciao");
+$news1 = $news1->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
 $news2 = new news();
-$news2 = $news2->insertNews("ciao", "ciao", "ciao");
+$news2 = $news2->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
 
 $div3col3 = new three_column_div();
 $div3col3 ->setThreeColumnDiv($news, $news1, $news2);

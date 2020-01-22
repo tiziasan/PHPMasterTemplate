@@ -1,27 +1,20 @@
 <?php
+
 class news{
-    function insertNews($title, $category, $description, $img="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb"){
-        $component = "<div class=\"my-2 mx-auto p-relative bg-white shadow-1 blue-hover\">
-                            <img src=".$img." alt=\"Man with backpack\" class=\"d-block w-full\">
-                            <div class=\"px-2 py-2\">
-                                <p class=\"mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px\">
-                                ".$category."
-                                </p>
-                                <h1 class=\"ff-serif font-weight-normal text-black card-heading mt-0 mb-1\" >
-                                ".$title."
-                                </h1>
-                                <p class=\"mb-1\">
-                                ".$description."
-                                </p>
-                            </div>
-                            <a href=\"#0\" class=\"text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link\">
-                            Read More
-                            </a>
-                        </div> ";
+
+    function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL = "https://www.admassociati.it/wp-content/uploads/2017/08/news.jpg"){
+        $component = "<div class=\"card\">
+   <img src='".$imgURL."'>
+      <a href=\"#\"><i class=\"fa fa-heart-o\"></i></a>
+   <div class=\"text\">
+      <h1 class=\"food\">
+         ".$title."
+      </h1>
+            <i class=\"fa fa-clock-o\">".$category."</i>
+      <p class=\"info\">".$description."</p>
+   </div>
+   <a href=\"".$btnURL."\" class=\"btn\">". $btnName."</a>
+</div>";
         return $component;
     }
-
-
-
-
 }
