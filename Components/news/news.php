@@ -18,7 +18,7 @@ class news{
                             Read More
                             </a>
                         </div> ";
-        echo $component;
+        return $component;
     }
 
 
