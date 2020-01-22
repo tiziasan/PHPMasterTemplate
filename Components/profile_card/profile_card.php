@@ -98,6 +98,6 @@ class profile_card{
 		</div>
 	</article>";
 
-        echo $component;
+        return $component;
     }
 }

@@ -12,8 +12,6 @@ class Basic_components{
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/map/map_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
 
-
-
         echo $component;
     }
 
