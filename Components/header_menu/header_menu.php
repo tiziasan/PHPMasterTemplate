@@ -2,7 +2,7 @@
 
 class header_menu {
 
-    function showHeaderMenu($arrayButton)
+    function showHeaderMenu($arrayButton,$pageTitle,$homeURL)
     {
         $button = '';
 
@@ -12,14 +12,20 @@ class header_menu {
 
         }
 
-        $content = "<div class=\"navbar\">
-                      ".$button."
-                    </div><br><br>";
+        $content = "<div class=\"header\">
+                      <a href=\"".$homeURL."\" class=\"logo\">".$pageTitle."</a>
+                      <div class=\"header-right\">
+                        ".$button."
+                      </div>
+                    </div><br><br><br><br>";
         echo $content;
 
     }
 
 }
+
+
+
 
 
 
