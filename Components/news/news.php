@@ -9,7 +9,7 @@ class news{
                                 <p class=\"mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px\">
                                 ".$category."
                                 </p>
-                                <h1 class=\"ff-serif font-weight-normal text-black card-heading mt-0 mb-1\" >
+                                <h1 class=\"ff-serif font-weight-normal text-black card-heading mt-0 mb-1\">
                                 ".$title."
                                 </h1>
                                 <p class=\"mb-1\">
