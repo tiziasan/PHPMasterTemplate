@@ -17,7 +17,7 @@ class header_menu {
                       <div class=\"header-right\">
                         ".$button."
                       </div>
-                    </div><br><br><br><br>";
+                    </div><br><br><br><br><br>";
         echo $content;
 
     }
