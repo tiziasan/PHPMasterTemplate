@@ -195,22 +195,5 @@ class Basic_components{
         $component = "<li ".$attributes.">".$body."</li>";
         echo $component;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Passare oggetti come attributo
-
 }
 
