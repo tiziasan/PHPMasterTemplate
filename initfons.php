@@ -10,12 +10,22 @@ include "Components/map/map.php";
 include "Components/header_menu/header_menu.php";
 include "Components/news/news.php";
 include "Components/profile_card/profile_card.php";
+include "Components/login_form/login_form.php";
+include "Components/general_form/general_form.php";
+
+
+
 
 $arrayButton = array(
     "Home" => "http://www.google.it",
     "Profile" => "http://www.google.it",
     "Contact" => "http://www.google.it",
     "House" => "http://www.google.it",
+);
+
+$arrayGf1 = array(
+    "field1" => "field-style field-split align-left",
+    ""
 );
 
 $basic = new Basic_components();
@@ -64,14 +74,27 @@ $map3->setMap("università degli studi dell'aquila");
 //$div3col3 = new three_column_div();
 //$div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 
-$profile = new profile_card();
-$profile = $profile ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
-$profile1 = new profile_card();
-$profile1 = $profile1 ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
-$profile2 = new profile_card();
-$profile2 = $profile2->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
+//$profile = new profile_card();
+//$profile = $profile ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
+//$profile1 = new profile_card();
+//$profile1 = $profile1 ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
+//$profile2 = new profile_card();
+//$profile2 = $profile2->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
 
 
 
-$div3col4 = new three_column_div();
-$div3col4 ->setThreeColumnDiv($profile, $profile1, $profile2);
+//$div3col4 = new three_column_div();
+//$div3col4 ->setThreeColumnDiv($profile, $profile1, $profile2);
+
+//$log1 = new login_form();
+//$log1 = $log1 -> login("action=fons.php");
+//$log2 = new login_form();
+//$log2 = $log2 -> login("action=fons.php");
+//$log3 = new login_form();
+//$log3 = $log3 -> login("action=fons.php");
+
+//$div3col5 = new three_column_div();
+//$div3col5 ->setThreeColumnDiv($log1, $log2, $log3);
+
+$gf = new general_form();
+$gf ->createGeneralForm($arrayGf1, $arrayGf2, "action=fons.php");

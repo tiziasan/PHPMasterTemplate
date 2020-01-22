@@ -69,7 +69,7 @@
     background-color: #28739E;
 }
 
-input[type="submit"] {
+.submit-gf{
     -webkit-appearance: push-button;
     user-select: none;
     white-space: pre;

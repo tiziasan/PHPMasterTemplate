@@ -1,6 +1,6 @@
 <?php
 class general_form{
-    function createGeneralForm($array, $attributes){
+    function createGeneralForm($array, $array1 $attributes){
        /* $component = "<form class=\"form-style-9\" action=".$attributes.">
                     <ul>";
     foreach ($array as $key => $val) {
@@ -36,7 +36,7 @@ class general_form{
 <textarea name=\"field5\" class=\"field-style\" placeholder=\"Message\"></textarea>
 </li>
 <li>
-<input type=\"submit\" value=\"Send Message\" />
+<input class=\"submit-gf\" value=\"Send Message\" />
 </li>
 </ul>
 </form>
