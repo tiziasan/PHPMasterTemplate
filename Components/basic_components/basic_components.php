@@ -17,93 +17,187 @@ class Basic_components{
 
     function setH1($body,$attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
-        echo $component;
+        return $component;
     }
 
     function setH2($body,$attributes = null){
         $component = "<h2 ". $attributes .  ">".$body."</h2>";
-        echo $component;
+        return $component;
     }
 
     function setH3($body,$attributes = null){
         $component = "<h3 ". $attributes .  ">".$body."</h3>";
-        echo $component;
+        return $component;
     }
 
     function setH4($body,$attributes = null){
         $component = "<h4 ". $attributes .  ">".$body."</h4>";
-        echo $component;
+        return $component;
     }
 
     function setH5($body,$attributes = null){
         $component = "<h5 ". $attributes .  ">".$body."</h5>";
-        echo $component;
+        return $component;
     }
 
     function setH6($body,$attributes = null){
         $component = "<h6 ". $attributes .  ">".$body."</h6>";
-        echo $component;
+        return $component;
     }
 
     function setInput($attributes = null){
         $component ="<input ".$attributes.">";
-        echo $component;
+        return $component;
     }
 
     function setBreakLine(){
         $component = "<br>";
-        echo $component;
+        return $component;
     }
     function setButton($body, $attributes = null){
         $component = "<button ".$attributes.">".$body."</button>";
-        echo $component;
+        return $component;
 
     }
     function setImg($attributes = null){
         $component = "<img".$attributes.">";
-        echo $component;
+        return $component;
 
     }
 
     function setLabel($body, $attributes = null){
         $component = "<label ".$attributes.">".$body."</label>";
-        echo $component;
+        return $component;
     }
 
     function setAReference($body, $attributes = null){
         $component = "<a ".$attributes.">".$body."</a>";
-        echo $component;
+        return $component;
     }
 
     function setOption($body, $attributes = null){
         $component = "<option ".$attributes.">".$body."</option>";
-        echo $component;
+        return $component;
     }
 
     function setParagraph($body, $attributes = null){
         $component = "<p ".$attributes.">".$body."</p>";
-        echo $component;
+        return $component;
     }
 
     function setQuote($body, $attributes = null){
         $component = "<q ".$attributes.">".$body."</q>";
-        echo $component;
+        return $component;
     }
 
     function setScript($body, $attributes = null){
         $component = "<script ".$attributes.">".$body."</script>";
-        echo $component;
+        return $component;
     }
 
     function setTextArea($body, $attributes = null){
         $component = "<textarea ".$attributes.">".$body."</textarea>";
-        echo $component;
+        return $component;
     }
 
     function setListItem($body, $attributes = null){
         $component = "<li ".$attributes.">".$body."</li>";
+        return $component;
+    }
+
+
+    function printH1($body,$attributes = null){
+        $component = "<h1 ". $attributes .  ">".$body."</h1>";
         echo $component;
     }
+
+    function printH2($body,$attributes = null){
+        $component = "<h2 ". $attributes .  ">".$body."</h2>";
+        echo $component;
+    }
+
+    function printH3($body,$attributes = null){
+        $component = "<h3 ". $attributes .  ">".$body."</h3>";
+        echo $component;
+    }
+
+    function printH4($body,$attributes = null){
+        $component = "<h4 ". $attributes .  ">".$body."</h4>";
+        echo $component;
+    }
+
+    function printH5($body,$attributes = null){
+        $component = "<h5 ". $attributes .  ">".$body."</h5>";
+        echo $component;
+    }
+
+    function printH6($body,$attributes = null){
+        $component = "<h6 ". $attributes .  ">".$body."</h6>";
+        echo $component;
+    }
+
+    function printInput($attributes = null){
+        $component ="<input ".$attributes.">";
+        echo $component;
+    }
+
+    function printBreakLine(){
+        $component = "<br>";
+        echo $component;
+    }
+    function printButton($body, $attributes = null){
+        $component = "<button ".$attributes.">".$body."</button>";
+        echo $component;
+
+    }
+    function printImg($attributes = null){
+        $component = "<img".$attributes.">";
+        echo $component;
+
+    }
+
+    function printLabel($body, $attributes = null){
+        $component = "<label ".$attributes.">".$body."</label>";
+        echo $component;
+    }
+
+    function printAReference($body, $attributes = null){
+        $component = "<a ".$attributes.">".$body."</a>";
+        echo $component;
+    }
+
+    function printOption($body, $attributes = null){
+        $component = "<option ".$attributes.">".$body."</option>";
+        echo $component;
+    }
+
+    function printParagraph($body, $attributes = null){
+        $component = "<p ".$attributes.">".$body."</p>";
+        echo $component;
+    }
+
+    function printQuote($body, $attributes = null){
+        $component = "<q ".$attributes.">".$body."</q>";
+        echo $component;
+    }
+
+    function printScript($body, $attributes = null){
+        $component = "<script ".$attributes.">".$body."</script>";
+        echo $component;
+    }
+
+    function printTextArea($body, $attributes = null){
+        $component = "<textarea ".$attributes.">".$body."</textarea>";
+        echo $component;
+    }
+
+    function printListItem($body, $attributes = null){
+        $component = "<li ".$attributes.">".$body."</li>";
+        echo $component;
+    }
+
+
+
 
 
 
