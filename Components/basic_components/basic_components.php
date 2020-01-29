@@ -2,7 +2,7 @@
 class Basic_components{
 
     function setHead($title){
-        $component = "<head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
+        $component = "<!DOCTYPE html><head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
@@ -11,6 +11,12 @@ class Basic_components{
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/three_column_div/three_column_div_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/map/map_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer/footer_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/one_column_div/one_column_div_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/icon-slider/icon_slider_style.css\">";
+
+
+
 
         echo $component;
     }

@@ -1,11 +1,9 @@
-.column-3 {
-    float: left;
-    width: 33.33%;
+.column-1 {
+    width: 100%;
     padding: 2%;
     display: flex;
     justify-content: center;
 }
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -13,3 +11,4 @@
     display: table;
     clear: both;
 }
+
