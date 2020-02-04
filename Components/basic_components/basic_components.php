@@ -2,21 +2,27 @@
 class Basic_components{
 
     function setHead($title){
-        $component = "<!DOCTYPE html><head><title>".$title."</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\"></head>";
+        $component  = "<!DOCTYPE html><html lang=\"it\"><head><meta charset=\"utf-8\"><title>".$title."</title>";
+        $component .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
+                       <meta name=\"viewport\" content=\"width=device-width\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/profile_card/profile_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/header_menu/header_menu_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/one_column_div/one_column_div_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/two_column_div/two_column_div_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/three_column_div/three_column_div_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/four_column_div/four_column_div_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/five_column_div/five_column_div_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/six_column_div/six_column_div_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/map/map_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer/footer_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/one_column_div/one_column_div_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/icon-slider/icon_slider_style.css\">";
 
-
-
+        $component .= "</head>";
 
         echo $component;
     }
