@@ -8,35 +8,35 @@ class footer_2{
 
         foreach ($arrayButton as $k => $v) {
 
-            $button .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button .= "<li>" . $k . "</li>";
         }
 
         $button1 = '';
 
         foreach ($arrayButton1 as $k => $v) {
 
-            $button1 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button1 .= "<li>" . $k . "</li>";
         }
 
         $button2 = '';
 
         foreach ($arrayButton2 as $k => $v) {
 
-            $button2 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button2 .= "<li>" . $k . "</li>";
         }
 
         $button3 = '';
 
         foreach ($arrayButton3 as $k => $v) {
 
-            $button3 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button3 .= "<li>". $k . "</li>";
         }
 
         $button4 = '';
 
         foreach ($arrayButton4 as $k => $v) {
 
-            $button4 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button4 .= "<li>" . $k . "</li>";
         }
             $component = "
 
