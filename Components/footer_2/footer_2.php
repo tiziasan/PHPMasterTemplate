@@ -24,6 +24,7 @@ class footer_2{
 
             $button2 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
+
         $button3 = '';
 
         foreach ($arrayButton3 as $k => $v) {
