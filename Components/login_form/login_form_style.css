@@ -15,15 +15,14 @@
 }
 
 .login {
-
     border-radius: 2px 2px 5px 5px;
     padding: 10px 20px 20px 20px;
     width: 90%;
-    max-width: 320px;
+    max-width: 500px;
     background: #ffffff;
     position: relative;
     padding-bottom: 80px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px #EF3E36;
 }
 
 .input-login {
@@ -31,7 +30,7 @@
     padding: 15px 10px;
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #EF3E36;
     transition: border-width 0.2s ease;
     border-radius: 2px;
     color: #ccc;
@@ -50,10 +49,9 @@
     width: 100%;
     height: 100%;
     padding: 10px 10px;
-    background:#2196F3;
+    background:#EF3E36;
     color: #fff;
     display: block;
-    border: none;
     margin-top: 20px;
     position: absolute;
     left: 0;
@@ -62,9 +60,8 @@
     border: 0px solid rgba(0,0,0,0.1);
     border-radius: 0 0 2px 2px;
     transform: rotateZ(0deg);
-
     transition: all 0.1s ease-out;
-    border-bottom-width: 7px
+    border-bottom-width: 7px;
 }
 
 .state{
