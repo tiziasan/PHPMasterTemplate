@@ -14,6 +14,7 @@ class Basic_components{
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/general_form/general_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/registration_form/registration_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer/footer_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer_2/footer_2_style.css\">";
         echo $component;
     }
 

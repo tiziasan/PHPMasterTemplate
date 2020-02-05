@@ -32,7 +32,7 @@
     padding: 0;
 }
 .footer .col ul li {
-    color: #999999;
+    color: white;
     font-size: 14px;
     font-family: inherit;
     font-weight: bold;
@@ -97,4 +97,8 @@
     .footer .col {
         width: 100%;
     }
+}
+
+.afooter{
+    color: white;
 }

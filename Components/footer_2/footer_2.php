@@ -1,5 +1,5 @@
 <?php
-class footer{
+class footer_2{
 
     function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3, $arrayButton4)
     {
@@ -8,35 +8,35 @@ class footer{
 
         foreach ($arrayButton as $k => $v) {
 
-            $button .= "<li><a href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
 
         $button1 = '';
 
         foreach ($arrayButton1 as $k => $v) {
 
-            $button1 .= "<li><a href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button1 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
 
         $button2 = '';
 
         foreach ($arrayButton2 as $k => $v) {
 
-            $button2 .= "<li><a href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button2 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
 
         $button3 = '';
 
         foreach ($arrayButton3 as $k => $v) {
 
-            $button3 .= "<li><a href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button3 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
 
         $button4 = '';
 
         foreach ($arrayButton4 as $k => $v) {
 
-            $button4 .= "<li><a href=\"" . $v . "\"</a>" . $k . "</li>";
+            $button4 .= "<li><a class=\"afooter\" href=\"" . $v . "\"</a>" . $k . "</li>";
         }
             $component = "
 
