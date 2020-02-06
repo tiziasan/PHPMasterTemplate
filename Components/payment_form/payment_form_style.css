@@ -1,0 +1,84 @@
+.rowpf {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25pf {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.col-50pf {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-75pf {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25pf,
+.col-50pf,
+.col-75pf{
+    padding: 0 16px;
+}
+
+.containerpf {
+    max-width: 90%;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #EF3E36;
+}
+
+.inputpf {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.labelpf{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-containerpf {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btnpf {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #EF3E36;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.btnpf:hover {
+    background-color: #17BEBB;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .rowpf {
+        flex-direction: column-reverse;
+    }
+    .col-25pf {
+        margin-bottom: 20px;
+    }
+}

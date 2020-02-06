@@ -19,7 +19,7 @@ class general_form{
 <textarea name=\"field5\" class=\"field-style\" placeholder=\"Message\"></textarea>
 </li>
 <li>
-<input class=\"submit-gf\" value=\"Send Message\" />
+<button class=\"buttongf\"> Send Message</button>
 </li>
 </ul>
 </form>
