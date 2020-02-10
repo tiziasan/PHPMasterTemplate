@@ -59,7 +59,7 @@ $map3 = $map3 ->setMap("università degli studi dell'aquila");
 $map2 = new map();
 $map2 = $map2 ->setMap("università degli studi dell'aquila");
 $map1 = new map();
-$map1 = $map1->setMap("università degli studi dell'aquila ");
+$map1 = $map1->setMap("università degli studi dell'aquila");
 
 
 $div3col4 = new three_column_div();
