@@ -12,6 +12,9 @@ include "Components/news/news.php";
 include "Components/profile_card/profile_card.php";
 include "Components/login_form/login_form.php";
 include "Components/general_form/general_form.php";
+include "Components/registration_form/registration_form.php";
+include "Components/footer/footer.php";
+include "Components/footer_2/footer_2.php";
 
 
 
@@ -21,11 +24,6 @@ $arrayButton = array(
     "Profile" => "http://www.google.it",
     "Contact" => "http://www.google.it",
     "House" => "http://www.google.it",
-);
-
-$arrayGf1 = array(
-    "field1" => "field-style field-split align-left",
-    ""
 );
 
 $basic = new Basic_components();
@@ -65,11 +63,11 @@ $map3 = new map();
 $map3->setMap("università degli studi dell'aquila");
 
 $news = new news();
-$news = $news->insertNews("ciao", "ciao", "ciao","","","");
+$news = $news->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
 $news1 = new news();
-$news1 = $news1->insertNews("ciao", "ciao", "ciao","","","");
+$news1 = $news1->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
 $news2 = new news();
-$news2 = $news2->insertNews("ciao", "ciao", "ciao","","","");
+$news2 = $news2->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
 
 $div3col3 = new three_column_div();
 $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
@@ -96,3 +94,28 @@ $log3 = $log3 -> login("action=fons.php");
 $div3col5 = new three_column_div();
 $div3col5 ->setThreeColumnDiv($log1, $log2, $log3);
 
+$gf = new general_form();
+$gf = $gf->createGeneralForm( "action=fons.php");
+$gf1 = new general_form();
+$gf1 = $gf1->createGeneralForm( "action=fons.php");
+$gf2 = new general_form();
+$gf2 = $gf2->createGeneralForm( "action=fons.php");
+
+$div3col6 = new three_column_div();
+$div3col6 ->setThreeColumnDiv($gf, $gf1, $gf2);
+
+$rf = new registration_form();
+$rf = $rf->createRegistrationForm("action=fons.php");
+$rf1 = new registration_form();
+$rf1 = $rf1 ->createRegistrationForm("action=fons.php");
+$rf2 = new registration_form();
+$rf2 = $rf2 ->createRegistrationForm("action=fons.php");
+
+$div3col7 = new three_column_div();
+$div3col7 ->setThreeColumnDiv($rf, $rf1, $rf2);
+
+//$footer = new footer();
+//$footer -> setFooter('aaaa','aaaaa','33333333','aaaaa','a', 'a');
+
+$footer_2 = new footer_2();
+$footer_2 ->insert_footer($arrayButton, $arrayButton, $arrayButton, $arrayButton, $arrayButton);

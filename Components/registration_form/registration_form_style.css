@@ -1,5 +1,59 @@
-#prova {
-    font-size: 800px;
-    border: 19px;
-    border-radius: 20px;
+.form-rf {
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #EF3E36;
+}
+.form-rf ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-rf ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-rf ul li  .rf-field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #EF3E36;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+.form-rffield-full{
+    width: 100%;
+}
+.form-rf input.birthday{width:60px;}
+.form-rf input.birthyear{width:120px;}
+.form-rf label { color: #000; font-weight:bold;font-size: 12px;font-family:Arial, Helvetica; }
+.form-rf label.month {width: 135px;}
+
+.form-rf .gender {
+    max-width: 410px;
+}
+
+.button-rf{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #EF3E36;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.state-rf{
+    font-size: 2.0em;
 }
