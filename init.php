@@ -11,8 +11,7 @@ include "Components/header_menu/header_menu.php";
 include "Components/news/news.php";
 include "Components/footer/footer.php";
 include "Components/one_column_div/one_column_div.php";
-include "Components/icon-slider/icon_slider.php";
-
+include "Components/img-slider/img_slider.php";
 
 $arrayButton = array(
     "Home" => "http://www.google.it",
@@ -25,7 +24,7 @@ $basic = new Basic_components();
 $basic->setHead("PHP Template Engine");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it");
+$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it",'cerca.php');
 
 
 $card1 = new recipe_card();
@@ -66,7 +65,7 @@ $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($map1, $map2, $map3);
 
 $div = new one_column_div();
-$div->setTwoColumnDiv($map1);
+$div->setOneColumnDiv($map1,$map1);
 
 
 $news = new news();
@@ -78,8 +77,14 @@ $news2 = $news2->insertNews("salvini", "ciao", "vota", "http://google.it","polit
 
 $div3col3 = new three_column_div();
 $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
-$icon = new icon_slider();
-$icon->setIconSlider();
+
+
+
 $footer =  new footer();
 
+
+
 $footer->setFooter("PHPMasterTemplate","tiziocompany", "via dei ceci","345261272837","tizio#sant.it","http://www.google.it","In god we trust.");
+
+$slider = new img_slider();
+$slider->insertSlider();

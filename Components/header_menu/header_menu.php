@@ -2,7 +2,7 @@
 
 class header_menu {
 
-    function showHeaderMenu($arrayButton,$pageTitle,$homeURL)
+    function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
     {
         $button = '';
 
@@ -14,9 +14,17 @@ class header_menu {
 
         $content = "<div class=\"header\">
                       <a href=\"".$homeURL."\" class=\"logo\">".$pageTitle."</a>
-                      <div class=\"header-right\">
+                        <form class='searchClass' action='".$actionSearch."'>
+                         <div class=\"header-right\">
                         ".$button."
-                      </div>
+                      <input type=\"search\" name=\"search\">
+                      <input type=\"submit\" value='Cerca'>
+                                            </div>
+
+                    </form>
+                      
+                    
+                      
                     </div><br><br><br><br><br>";
         echo $content;
 
