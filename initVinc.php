@@ -72,10 +72,27 @@ $option3 = $option3->setOption("cinese");
 $optionArray = [$option1,$option2,$option3];
 
 $select = new Basic_components();
-$select = $select->setSelect($optionArray);
+$select->printSelect($optionArray);
 
-echo $select;
 
+
+
+
+$element1 = new Basic_components();
+$element1 = $element1->setListItem("elemento1");
+
+$numero2 = new Basic_components();
+$numero2 = $numero2->setListItem(2);
+
+$a1 = new Basic_components();
+$a1 = $a1->setAReference("link1", "href=\"#\"");
+$link3 = new Basic_components();
+$link3 = $link3->setListItem($a1);
+
+$array = array($element1,$numero2,$link3);
+
+$list = new Basic_components();
+$list->printListElement($array);
 
 
 

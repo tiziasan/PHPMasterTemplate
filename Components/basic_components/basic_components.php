@@ -134,6 +134,20 @@ class Basic_components{
         return $component;
     }
 
+    function setListElement(array $elements){
+        $component="";
+
+        $component .= "<ul>";
+        foreach ($elements as $element){
+            $component .= $element;
+        }
+        $component .= "</ul>";
+        return $component;
+    }
+
+
+
+
 
     function printH1($body,$attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
@@ -232,6 +246,17 @@ class Basic_components{
 
     function printListItem($body, $attributes = null){
         $component = "<li ".$attributes.">".$body."</li>";
+        echo $component;
+    }
+
+    function printListElement(array $elements){
+        $component="";
+
+        $component .= "<ul>";
+        foreach ($elements as $element){
+            $component .= $element;
+        }
+        $component .= "</ul>";
         echo $component;
     }
 }
