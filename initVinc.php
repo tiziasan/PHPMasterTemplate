@@ -25,11 +25,11 @@ $basic = new Basic_components();
 $basic->setHead("PHP Template Engine");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it");
+$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it",'cerca.php');
 
 
 
-
+/*
 $element1 = new Basic_components();
 $element1 = $element1->setListItem("elemento1");
 
@@ -50,9 +50,6 @@ $list->setListElement($array);
 $card1 = new recipe_card();
 $card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
 
-
-
-
 $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($card1, $card1, $card1);
 
@@ -61,7 +58,23 @@ $divcol2 ->setTwoColumnDiv($card1, $card1);
 
 $divcol5 = new five_column_div();
 $divcol5 ->setFiveColumnDiv($card1, $card1, $card1, $card1, $card1);
+*/
 
+$option1 = new Basic_components();
+$option1 = $option1->setOption("italiano");
+
+$option2 = new Basic_components();
+$option2 = $option2->setOption("inglese");
+
+$option3 = new Basic_components();
+$option3 = $option3->setOption("cinese");
+
+$optionArray = [$option1,$option2,$option3];
+
+$select = new Basic_components();
+$select = $select->setSelect($optionArray);
+
+echo $select;
 
 
 

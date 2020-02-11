@@ -98,6 +98,16 @@ class Basic_components{
         $component = "<option ".$attributes.">".$body."</option>";
         return $component;
     }
+    
+    function setSelect(array $elements){
+        $component="";
+        $component .= "<select>";
+        foreach ($elements as $element){
+            $component .= $element;
+        }
+        $component .= "</select>";
+        return $component;
+    }
 
     function setParagraph($body, $attributes = null){
         $component = "<p ".$attributes.">".$body."</p>";
@@ -187,6 +197,16 @@ class Basic_components{
 
     function printOption($body, $attributes = null){
         $component = "<option ".$attributes.">".$body."</option>";
+        echo $component;
+    }
+
+    function printSelect(array $elements){
+        $component="";
+        $component .= "<select>";
+        foreach ($elements as $element){
+            $component .= $element;
+        }
+        $component .= "</select>";
         echo $component;
     }
 
