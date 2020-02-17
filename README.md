@@ -12,5 +12,8 @@ The components that the library provides are:
 
 News it is a card that allows you to insert news into the Web Application. It is a component that takes as input the following parameters in order as they are written: title, description, button name, button url and category.
 
+```PHP
+ function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL)
+```
 
 
