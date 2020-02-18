@@ -9,6 +9,7 @@ include_once "Components/map/map.php";
 include_once "Components/header_menu/header_menu.php";
 include_once "Components/news/news.php";
 include_once "Components/list/list_element.php";
+include_once "Components/one_column_div/one_column_div.php";
 include_once "Components/two_column_div/two_column_div.php";
 include_once "Components/three_column_div/three_column_div.php";
 include_once "Components/five_column_div/five_column_div.php";
@@ -29,7 +30,6 @@ $headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.goog
 
 
 
-/*
 $element1 = new Basic_components();
 $element1 = $element1->setListItem("elemento1");
 
@@ -43,8 +43,8 @@ $link3 = $link3->setListItem($a1);
 
 $array = array($element1,$numero2,$link3);
 
-$list = new list_element();
-$list->setListElement($array);
+$list = new Basic_components();
+$list->printListElement($array);
 
 
 $card1 = new recipe_card();
@@ -53,12 +53,12 @@ $card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facil
 $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($card1, $card1, $card1);
 
-$divcol2 = new two_column_div();
-$divcol2 ->setTwoColumnDiv($card1, $card1);
+$divcol2 = new one_column_div();
+$divcol2 ->setOneColumnDiv($card1);
 
 $divcol5 = new five_column_div();
 $divcol5 ->setFiveColumnDiv($card1, $card1, $card1, $card1, $card1);
-*/
+
 
 $option1 = new Basic_components();
 $option1 = $option1->setOption("italiano");
@@ -77,22 +77,6 @@ $select->printSelect($optionArray);
 
 
 
-
-$element1 = new Basic_components();
-$element1 = $element1->setListItem("elemento1");
-
-$numero2 = new Basic_components();
-$numero2 = $numero2->setListItem(2);
-
-$a1 = new Basic_components();
-$a1 = $a1->setAReference("link1", "href=\"#\"");
-$link3 = new Basic_components();
-$link3 = $link3->setListItem($a1);
-
-$array = array($element1,$numero2,$link3);
-
-$list = new Basic_components();
-$list->printListElement($array);
 
 
 
