@@ -5,12 +5,3 @@
     justify-content: center;
     min-width: 250px;
 }
-
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-

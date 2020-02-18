@@ -3,10 +3,3 @@
     width: 16.66%;
     padding: 2%;
 }
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
