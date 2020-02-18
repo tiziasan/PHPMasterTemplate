@@ -11,13 +11,23 @@ include "Components/header_menu/header_menu.php";
 include "Components/news/news.php";
 include "Components/footer/footer.php";
 include "Components/one_column_div/one_column_div.php";
-include "Components/img-slider/img_slider.php";
+include "Components/table/table.php";
+
 
 $arrayButton = array(
     "Home" => "http://www.google.it",
     "Profile" => "http://www.google.it",
     "Contact" => "http://www.google.it",
     "House" => "http://www.google.it",
+);
+
+$arrayColumns= array("casa1","casa2","casa3","casa4");
+
+$arrayRaws = array(
+    array("casa1","casa2","casa3","casa4"),
+    array("casa1","casa2","casa3","casa4"),
+    array("casa1","casa2","casa3","casa4"),
+    array("casa1","casa2","casa3","casa4")
 );
 
 $basic = new Basic_components();
@@ -78,6 +88,9 @@ $news2 = $news2->insertNews("salvini", "ciao", "vota", "http://google.it","polit
 $div3col3 = new three_column_div();
 $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 
+$table = new table();
+$table->setTable($arrayColumns, $arrayRaws);
+
 
 
 $footer =  new footer();
@@ -86,5 +99,3 @@ $footer =  new footer();
 
 $footer->setFooter("PHPMasterTemplate","tiziocompany", "via dei ceci","345261272837","tizio#sant.it","http://www.google.it","In god we trust.");
 
-$slider = new img_slider();
-$slider->insertSlider();
