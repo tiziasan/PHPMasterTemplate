@@ -1,13 +1,26 @@
 <?php
-class Basic_components{
+class Basic_components {
+
+    public $import_css = array();
+
+    public static function addCss($link){
+        array_push($import_css, $link);
+    }
 
     function setHead($title){
 
-        $component  = "<!DOCTYPE html><html lang=\"it\"><head><meta charset=\"utf-8\"><title>".$title."</title>";
+        $component  = "<!DOCTYPE html>
+                        <html lang=\"it\">
+                            <head>
+                            <meta charset=\"utf-8\">
+                            <title>".$title."</title>";
 
         $component .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
                        <meta name=\"viewport\" content=\"width=device-width\">";
+
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
+
+        /*
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
@@ -27,12 +40,27 @@ class Basic_components{
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer_2/footer_2_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/payment_form/payment_form_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/img-slider/img_slider_style.css\">";
-
-        $component .= "</head>";
+*/
+        $component .= "</head><body>";
 
         echo $component;
 
     }
+
+
+    function finish(){
+        $component = "";
+        foreach ($this->import_css as $single_css){
+            $component .= $single_css;
+        }
+
+        echo $component . '
+            </body>
+        </html>
+
+        ';
+    }
+
 
     function setH1($body,$attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
