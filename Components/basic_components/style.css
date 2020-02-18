@@ -18,4 +18,17 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 
+@media screen and (max-width: 480px) {
+
+    .column {
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+
+}
+
 
