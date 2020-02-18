@@ -70,3 +70,9 @@ General form it is a generic form, mainly used to send messages, ask for informa
 ```PHP
 function createGeneralForm($attributes)
 ```
+- **HEADER MENU'**
+
+Header Menu, is a component that allows you to insert a menu inside the header. Inside the header we can insert all the menu items that we want through an array that we pass to it as input, together with a title, together with a url, and a search action.
+```PHP
+function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
+```
