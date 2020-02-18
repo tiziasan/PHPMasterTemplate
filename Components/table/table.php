@@ -25,6 +25,5 @@ class table
 
         echo $start.$elementColumns.$elementRow.$end;
     }
-
 }
 
