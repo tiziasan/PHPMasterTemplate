@@ -146,3 +146,10 @@ The Select allows the possibility to insert on the web application a selection o
 ```PHP
 function insertSelect()
 ```
+
+-**TABLE**
+
+The Table is a component that allows the possibility to insert on the web application a classic table with rows and columns. Take in input two array one for the columns and one for the rows.
+'''PHP
+function setTable(array $columns,array $rows)
+'''
