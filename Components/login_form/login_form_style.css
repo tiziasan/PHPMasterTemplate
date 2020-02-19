@@ -1,17 +1,6 @@
-
 @keyframes spinner {
     0% { transform: rotateZ(0deg); }
     100% { transform: rotateZ(359deg); }
-}
-
-.wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
 }
 
 .login {
@@ -64,9 +53,6 @@
     border-bottom-width: 7px;
 }
 
-.state{
-    font-size: 2.0em;
-}
 .a-login{
     color: -webkit-link;
     cursor: pointer;

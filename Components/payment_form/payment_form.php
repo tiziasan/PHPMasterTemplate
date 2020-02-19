@@ -4,24 +4,22 @@ class payment_form{
 
     function inset_payment_form(){
 
-        $component = "<div class=\"rowpf\">
-                          <div class=\"col-75pf\">
-                            <div class=\"containerpf\">
-                              <form action=\"/action_page.php\">
+        $component = "
+<div class=\"form-container\">
+                <form class=\"form-style\" action=\"/action_page.php\">
+                    <div class=\"rowpf\">
+                        <div class=\"col-50pf\">
+                            <h3>Billing Address</h3>
+                                <label for=\"fname\" class = \"labelpf\"><i class=\"fa fa-user\"></i> Full Name</label>
+                                <input type=\"text\" class=\"inputpf\" id=\"fname\" name=\"firstname\" placeholder=\"John M. Doe\">
+                                <label for=\"email\" class = \"labelpf\"><i class=\"fa fa-envelope\"></i> Email</label>
+                                <input type=\"text\" class=\"inputpf\" id=\"email\" name=\"email\" placeholder=\"john@example.com\">
+                                <label for=\"adr\" class = \"labelpf\"><i class=\"fa fa-address-card-o\"></i> Address</label>
+                                <input type=\"text\" class=\"inputpf\" id=\"adr\" name=\"address\" placeholder=\"542 W. 15th Street\">
+                                <label for=\"city\" class = \"labelpf\"><i class=\"fa fa-institution\"></i> City</label>
+                                <input type=\"text\" class=\"inputpf\" id=\"city\" name=\"city\" placeholder=\"New York\">
                         
                                 <div class=\"rowpf\">
-                                  <div class=\"col-50pf\">
-                                    <h3>Billing Address</h3>
-                                    <label for=\"fname\" class = \"labelpf\"><i class=\"fa fa-user\"></i> Full Name</label>
-                                    <input type=\"text\" class=\"inputpf\" id=\"fname\" name=\"firstname\" placeholder=\"John M. Doe\">
-                                    <label for=\"email\" class = \"labelpf\"><i class=\"fa fa-envelope\"></i> Email</label>
-                                    <input type=\"text\" class=\"inputpf\" id=\"email\" name=\"email\" placeholder=\"john@example.com\">
-                                    <label for=\"adr\" class = \"labelpf\"><i class=\"fa fa-address-card-o\"></i> Address</label>
-                                    <input type=\"text\" class=\"inputpf\" id=\"adr\" name=\"address\" placeholder=\"542 W. 15th Street\">
-                                    <label for=\"city\" class = \"labelpf\"><i class=\"fa fa-institution\"></i> City</label>
-                                    <input type=\"text\" class=\"inputpf\" id=\"city\" name=\"city\" placeholder=\"New York\">
-                        
-                                    <div class=\"rowpf\">
                                       <div class=\"col-50pf\">
                                         <label for=\"state\" class = \"labelpf\">State</label>
                                         <input type=\"text\" class=\"inputpf\" id=\"state\" name=\"state\" placeholder=\"NY\">
@@ -65,10 +63,8 @@ class payment_form{
                                 <label class = \"labelpf\">
                                   <input type=\"checkbox\" checked=\"checked\" name=\"sameadr\"> Shipping address same as billing
                                 </label>
-                                <input type=\"submit\" value=\"Continue to checkout\" class=\"btnpf\">
+                                <input type=\"submit\" value=\"Continue to checkout\" class=\"button\">
                               </form>
-                            </div>
-                          </div>
                         </div>";
 
         return $component;
