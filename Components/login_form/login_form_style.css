@@ -1,47 +1,31 @@
-
 @keyframes spinner {
     0% { transform: rotateZ(0deg); }
     100% { transform: rotateZ(359deg); }
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
-}
-
 .login {
     border-radius: 2px 2px 5px 5px;
     padding: 10px 20px 20px 20px;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     background: #ffffff;
     position: relative;
     padding-bottom: 80px;
-    box-shadow: 0px 1px 5px #EF3E36;
+    box-shadow: 0 1px 5px #EF3E36;
 }
 
 .input-login {
     display: block;
-    padding: 15px 10px;
+    padding: 12px 10px;
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid #EF3E36;
     transition: border-width 0.2s ease;
-    border-radius: 2px;
-    color: #ccc;
 }
 
 .title-login{
-    color: #444;
     font-size: 1.2em;
     font-weight: bold;
     margin: 10px 0 30px 0;
-    border-bottom: 1px solid #eee;
     padding-bottom: 20px;
 }
 
@@ -64,9 +48,6 @@
     border-bottom-width: 7px;
 }
 
-.state{
-    font-size: 2.0em;
-}
 .a-login{
     color: -webkit-link;
     cursor: pointer;

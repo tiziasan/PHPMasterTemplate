@@ -15,6 +15,7 @@ include "Components/general_form/general_form.php";
 include "Components/registration_form/registration_form.php";
 include "Components/footer/footer.php";
 include "Components/footer_2/footer_2.php";
+include "Components/payment_form/payment_form.php";
 
 
 
@@ -65,7 +66,7 @@ $map3->setMap("università degli studi dell'aquila");
 $news = new news();
 $news = $news->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
 $news1 = new news();
-$news1 = $news1->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
+$news1 = $news1->insertNews("news", "news", "news", "news", "news");
 $news2 = new news();
 $news2 = $news2->insertNews("ciao", "ciao", "ciao", "ciao", "ciao");
 
@@ -117,5 +118,8 @@ $div3col7 ->setThreeColumnDiv($rf, $rf1, $rf2);
 //$footer = new footer();
 //$footer -> setFooter('aaaa','aaaaa','33333333','aaaaa','a', 'a');
 
-$footer_2 = new footer_2();
-$footer_2 ->insert_footer($arrayButton, $arrayButton, $arrayButton, $arrayButton, $arrayButton);
+//$footer_2 = new footer_2();
+//$footer_2 ->insert_footer($arrayButton, $arrayButton, $arrayButton, $arrayButton, $arrayButton);
+
+$pf = new payment_form();
+$pf ->inset_payment_form();

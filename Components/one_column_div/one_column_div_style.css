@@ -4,10 +4,4 @@
     justify-content: center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
