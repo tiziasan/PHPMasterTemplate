@@ -2,11 +2,20 @@
 
 class img_slider
 {
-    function insertSlider()
+    function insertSlider(array $images)
     {
-        $component = "";
+        $component = "<div class=\"slider\">";
+        for ($i = 0; $i < count($images); $i++){
+            $component .= "  <a href=\"#slide-".$i."\">".$i."</a>";
+        }
+        $component .= "<div class=\"slides\">";
 
-        echo $component;
+        for ($i = 0; $i < count($images); $i++){
+            $component .= "<img id=\"slide-".$i."\" src=\"".$images[$i]."\">";
+        }
+        $component .= "</div></div>";
+
+        return $component;
 
     }
 }

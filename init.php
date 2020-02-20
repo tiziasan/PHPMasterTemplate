@@ -12,6 +12,7 @@ include "Components/news/news.php";
 include "Components/footer/footer.php";
 include "Components/one_column_div/one_column_div.php";
 include "Components/table/table.php";
+include "Components/img-slider/img_slider.php";
 
 
 $arrayButton = array(
@@ -91,6 +92,11 @@ $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 $table = new table();
 $table->setTable($arrayColumns, $arrayRaws);
 
+$images = array("https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg","https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg","https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg");
+$slider= new img_slider();
+$slider = $slider->insertSlider($images);
+$divSlider = new one_column_div();
+$divSlider->setOneColumnDiv($slider);
 
 
 $footer =  new footer();
