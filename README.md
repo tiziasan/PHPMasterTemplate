@@ -28,7 +28,7 @@ function setTwoColumnDiv($object1, $object2)
 ```
 Below we find all components similar to the one above, but with the number of different columns and the parameters that it takes as input.
 
--**DIV1COL**
+- **DIV1COL**
 
 ```PHP
 function setOneColumnDiv($object1)
