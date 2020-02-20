@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+    -webkit-box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
 body{
     margin: 0;
 }
@@ -62,6 +73,7 @@ FORM-CONTAINER
     border-radius: 10px;
     border: 6px solid #EF3E36;
 }
+
 .form-container .button{
     border: none;
     outline: 0;
@@ -74,6 +86,8 @@ FORM-CONTAINER
     width: 100%;
     font-size: 18px;
 }
+
+
 
 
 
