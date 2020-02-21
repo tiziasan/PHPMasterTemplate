@@ -95,7 +95,7 @@ The Login Form component provide a simple input form, where the user insert user
 function login($attribute)
 ```
 
--**MAP**
+- **MAP**
 
 The Map component  provide a map, where the user set a location and see where the city is located. This component provide two methos, both take in input a location, but the first allows you to set the city on the map, the second allows you to view the map.
 ```PHP
@@ -105,51 +105,58 @@ function setMap($location)
 function printMap($location)
 ```
 
--**PAYMENT FORM**
+- **PAYMENT FORM**
 
 The Payment form provide a classic form to checkout an order, where the user insert its data(name, surname, date of the birth ecc.). Takes in input the attributes action.
 ```PHP
 function insert_payment_form($attributes)
 ```
 
--**PROFILE CARD**
+- **PROFILE CARD**
 
 The Profile Card allows you to set a complete user profile, taking as input parameters that allow you to set the data to be displayed within the profile.
 ```PHP
  function createProfile($name,$role,$where,$btnName,$btnURL,$img)
 ```
 
--**RECEIPE CARD**
+- **RECEIPE CARD**
 
 The Receipe Card allows the possibility to insert on the web application a receipe for a typical meal, the ingredients that compose it, the difficult for its preparation and the preparation time. All elements are take in input by the function showReceipeCard.
 ```PHP
 function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$btnURL,$imgURL)
 ```
 
--**REGISTRATION FORM**
+- **REGISTRATION FORM**
 
 The Registration Form allows the possibility to insert a form on the web application to register. It is composed of the classic fields of a registration form. like the other forms it takes as input only the action parameter of the form
 ```PHP
 function createRegistrationForm($attributes)
 ```
 
--**SECTION**
+- **SECTION**
 
 The Section allows the possibility to insert a section on the web application. The parameter that it takes in input are the title and the body. 
 ```PHP
 function insertSection($title,$body)
 ```
 
--**SELECT**
+- **SELECT**
 
 The Select allows the possibility to insert on the web application a selection of something, such as the choice of language. 
 ```PHP
 function insertSelect()
 ```
 
--**TABLE**
+- **TABLE**
 
 The Table is a component that allows the possibility to insert on the web application a classic table with rows and columns. Take in input two array one for the columns and one for the rows.
 '''PHP
 function setTable(array $columns,array $rows)
 '''
+
+- **IMG_SLIDER**
+
+The Img_Slider allow the possibility to insert a slider on the web application. It take in input an array of images, which will be inserted into the slider. 
+```PHP
+function insertSlider(array $images)
+```
