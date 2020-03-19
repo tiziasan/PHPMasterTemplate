@@ -7,6 +7,9 @@ class Basic_components{
 
         $component .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
                        <meta name=\"viewport\" content=\"width=device-width\">";
+
+        $component .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
+
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
