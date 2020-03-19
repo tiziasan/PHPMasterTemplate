@@ -1,5 +1,4 @@
 .gmap_canvas{
     width: 100%;
-    position: center;
-
+    height: 40vh;
 }
