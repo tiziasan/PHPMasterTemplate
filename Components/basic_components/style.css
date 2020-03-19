@@ -105,36 +105,13 @@ CARD-CONTAINER
     background-size: cover;
     min-height: 350px;
 }
-.card .header .icon a .fa-heart-o {
-    position: absolute;
-    left: 85%;
-    bottom: 30.7%;
-    background: #17BEBB;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0px 5px 30px 1px #17BEBB;
-}
-.card .text .food {
+.card .text .title {
     color: #212129;
     text-align: left;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 5px 30px;
-}
-.card .text .fa-clock-o {
-    color: #9B9B9B;
-    margin: 0 30px;
-}
-.card .text .fa-users {
-    color: #9B9B9B;
-}
-.card .text .fa-difficult {
-    color: #9B9B9B;
-    margin-left: 7%;
 }
 .card .stars {
     margin: 10px 30px;

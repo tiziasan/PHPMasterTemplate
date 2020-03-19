@@ -6,7 +6,7 @@ class recipe_card{
         $component = "<div class=\"card\">
    <img src='".$imgURL."'>
    <div class=\"text\">
-      <h1 class=\"food\">
+      <h1 class=\"title\">
          ".$recipeName."
       </h1>
       <i class=\"fa fa-clock-o\">".$time."</i>
