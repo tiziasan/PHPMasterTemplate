@@ -149,12 +149,10 @@ CARD-CONTAINER
     display: block;
     background: #EF3E36;
     color: #fff;
-    position: relative;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: center;
     padding: 10px;
-    transition: 250ms;
 }
 .card a.btn:hover {
     background: #17BEBB;
