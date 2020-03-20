@@ -3,11 +3,9 @@
     -webkit-box-sizing: border-box;
 }
 
-
 html, body {
     height: 100%;
 }
-
 
 body{
     margin: 0;
@@ -69,7 +67,6 @@ FORM-CONTAINER
     max-width: 450px;
     background: #FAFAFA;
     padding: 30px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     border: 6px solid #EF3E36;
 }
@@ -94,8 +91,8 @@ CARD-CONTAINER
     position: relative;
     background: #fff;
     max-width: 500px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 30px 2px #000;
+    margin: auto;
+    border: 2px solid #7e7e7e66;
     word-break: break-all;
 }
 .card img {
@@ -135,8 +132,6 @@ CARD-CONTAINER
     background: #17BEBB;
     transition: 250ms;
 }
-
-
 
 
 
