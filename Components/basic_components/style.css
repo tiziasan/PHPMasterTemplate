@@ -54,13 +54,8 @@ COLONNE
 FORM-CONTAINER
 =====================================================================================================*/
 .form-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-height: 100%;
-    min-width: 250px;
 }
 
 .form-container .form-style{
@@ -92,8 +87,9 @@ CARD-CONTAINER
     background: #fff;
     max-width: 500px;
     margin: auto;
-    border: 2px solid #7e7e7e66;
     word-break: break-all;
+    border-radius: 10px;
+    border: 6px solid #EF3E36;
 }
 .card img {
     max-width: 100%;

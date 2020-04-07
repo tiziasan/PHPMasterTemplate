@@ -4,14 +4,8 @@
 }
 
 .login {
-    border-radius: 2px 2px 5px 5px;
-    padding: 10px 20px 20px 20px;
     width: 100%;
-    max-width: 500px;
-    background: #ffffff;
     position: relative;
-    padding-bottom: 80px;
-    box-shadow: 0 1px 5px #EF3E36;
 }
 
 .input-login {
