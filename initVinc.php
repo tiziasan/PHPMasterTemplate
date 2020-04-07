@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set("display_errors","On");
 
 include_once "Components/basic_components/basic_components.php";
+include_once "Components/card/card.php";
 include_once "Components/five_column_div/five_column_div.php";
 include_once "Components/footer/footer.php";
 include_once "Components/footer_2/footer_2.php";
@@ -22,7 +23,6 @@ include_once "Components/six_column_div/six_column_div.php";
 include_once "Components/table/table.php";
 include_once "Components/three_column_div/three_column_div.php";
 include_once "Components/two_column_div/two_column_div.php";
-include_once "Components/user_profile/user_profile.php";
 
 
 $arrayButton = array(
@@ -74,7 +74,7 @@ $select->printSelect($optionArray);
 
 
 $log1 = new login_form();
-$log1 = $log1 -> login("action=fons.php");
+$log1 = $log1->login("action=fons.php");
 
 $gf = new general_form();
 $gf = $gf->createGeneralForm( "action=fons.php");
@@ -83,12 +83,15 @@ $pf = new payment_form();
 $pf = $pf->inset_payment_form();
 
 $col3 = new three_column_div();
-$col3 ->setThreeColumnDiv($log1, $gf, $pf);
+$col3->setThreeColumnDiv($log1, $gf, $pf);
 
 
 
 $map = new map();
 $map = $map->setMap("università degli studi dell'aquila");
+
+$map_card = new card();
+$map_card = $map_card->setCard($map);
 
 $recipe_card = new recipe_card();
 $recipe_card = $recipe_card -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
@@ -106,7 +109,7 @@ $col2 = new two_column_div();
 $col2 ->setTwoColumnDiv($map, $recipe_card);
 
 $col3 = new three_column_div();
-$col3 ->setThreeColumnDiv($recipe_card, $news, $map);
+$col3 ->setThreeColumnDiv($map_card, $news, $map);
 
 $col4 = new four_column_div();
 $col4 ->setFourColumnDiv($recipe_card, $news, $map, $profile);
