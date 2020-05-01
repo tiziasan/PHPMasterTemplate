@@ -26,6 +26,10 @@ Div2Col allows you to create a div with 2 columns and already have a pre-set and
 ```PHP
 function setTwoColumnDiv($object1, $object2)
 ```
+<p align="center">
+<img width="518" src="docs/div2.png">
+</p>
+
 Below we find all components similar to the one above, but with the number of different columns and the parameters that it takes as input.
 
 - **DIV1COL**
@@ -33,27 +37,44 @@ Below we find all components similar to the one above, but with the number of di
 ```PHP
 function setOneColumnDiv($object1)
 ```
+<p align="center">
+<img width="518" src="docs/map.png">
+</p>
+
 - **DIV3COL**
 
 ```PHP
 function setThreeColumnDiv($object1, $object2, $object3)
 ```
+<p align="center">
+<img width="518" src="docs/div3.png">
+</p>
+
 - **DIV4COL**
 
 ```PHP
 function setFourColumnDiv($object1, $object2, $object3, $object4)
 ```
+<p align="center">
+<img width="518" src="docs/div4.png">
+</p>
 
 - **DIV5COL**
 
 ```PHP
 function setFiveColumnDiv($object1, $object2, $object3, $object4, $object5)
 ```
+<p align="center">
+<img width="518" src="docs/div5.png">
+</p>
 
 - **DIV6COL**
 ```PHP
 function setSixColumnDiv($object1, $object2, $object3,$object4, $object5, $object6)
 ```
+<p align="center">
+<img width="518" src="docs/div6.png">
+</p>
 
 - **FOOTER**
 
@@ -65,9 +86,16 @@ we created two types of footers:
 ```PHP
 function setFooter(string $title, string $completeAddress, $phoneNumber, $email, $mailLink,$description)  
 ```
+<p align="center">
+<img width="518" src="docs/footer1.png">
+</p>
+
 ```PHP
 function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3, $arrayButton4)
 ```
+<p align="center">
+<img width="518" src="docs/footer2.png">
+</p>
   
 - **GENERAL FORM**
 
@@ -75,18 +103,29 @@ General form it is a generic form, mainly used to send messages, ask for informa
 ```PHP
 function createGeneralForm($attributes)
 ```
+<p align="center">
+<img width="518" src="docs/generalform.png">
+</p>
+
 - **HEADER MENU'**
 
 Header Menu allows you to insert a menu inside the header. Inside the header we can insert all the menu items that we want through an array that we pass to it as input, together with a title, together with a url, and a search action.
 ```PHP
 function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
 ```
+<p align="center">
+<img width="518" src="docs/header.png">
+</p>
+
 - **LIST**
 
 The List component allows you to insert a list within our web application that accepts parameters of any type (string, number, link, etc.). as input it takes an array which can contain elements of any type.
 ```PHP
 function setListElement(array $elements)
 ```
+<p align="center">
+<img width="518" src="docs/list.png">
+</p>
 
 - **LOGIN FORM**
 
@@ -94,6 +133,9 @@ The Login Form component provide a simple input form, where the user insert user
 ```PHP
 function login($attribute)
 ```
+<p align="center">
+<img width="518" src="docs/loginform.png">
+</p>
 
 - **MAP**
 
@@ -104,6 +146,9 @@ function setMap($location)
 ```PHP
 function printMap($location)
 ```
+<p align="center">
+<img width="518" src="docs/map.png">
+</p>
 
 - **PAYMENT FORM**
 
@@ -111,6 +156,9 @@ The Payment form provide a classic form to checkout an order, where the user ins
 ```PHP
 function insert_payment_form($attributes)
 ```
+<p align="center">
+<img width="518" src="docs/paymentform.png">
+</p>
 
 - **PROFILE CARD**
 
@@ -118,6 +166,9 @@ The Profile Card allows you to set a complete user profile, taking as input para
 ```PHP
  function createProfile($name,$role,$where,$btnName,$btnURL,$img)
 ```
+<p align="center">
+<img width="518" src="docs/profile.png">
+</p>
 
 - **RECEIPE CARD**
 
@@ -125,6 +176,9 @@ The Receipe Card allows the possibility to insert on the web application a recei
 ```PHP
 function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$btnURL,$imgURL)
 ```
+<p align="center">
+<img width="518" src="docs/receipecard.png">
+</p>
 
 - **REGISTRATION FORM**
 
@@ -132,6 +186,9 @@ The Registration Form allows the possibility to insert a form on the web applica
 ```PHP
 function createRegistrationForm($attributes)
 ```
+<p align="center">
+<img width="518" src="docs/registration.png">
+</p>
 
 - **SECTION**
 
@@ -139,6 +196,9 @@ The Section allows the possibility to insert a section on the web application. T
 ```PHP
 function insertSection($title,$body)
 ```
+<p align="center">
+<img width="518" src="docs/section.png">
+</p>
 
 - **SELECT**
 
@@ -146,6 +206,9 @@ The Select allows the possibility to insert on the web application a selection o
 ```PHP
 function insertSelect()
 ```
+<p align="center">
+<img width="518" src="docs/select.png">
+</p>
 
 - **TABLE**
 
@@ -153,6 +216,9 @@ The Table is a component that allows the possibility to insert on the web applic
 '''PHP
 function setTable(array $columns,array $rows)
 '''
+<p align="center">
+<img width="518" src="docs/table.png">
+</p>
 
 - **IMG_SLIDER**
 
@@ -160,3 +226,6 @@ The Img_Slider allow the possibility to insert a slider on the web application. 
 ```PHP
 function insertSlider(array $images)
 ```
+<p align="center">
+<img width="518" src="docs/slider.png">
+</p>
