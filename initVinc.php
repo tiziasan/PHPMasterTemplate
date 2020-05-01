@@ -100,25 +100,25 @@ $news = new news();
 $news = $news->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
 
 $profile = new profile_card();
-$profile = $profile ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
+$profile = $profile ->createProfile("profile", "profile", "profile", "salva", "http://bellante.com");
 
 $col1 = new one_column_div();
-$col1 ->setOneColumnDiv($map);
+$col1 ->setOneColumnDiv($map_card);
 
 $col2 = new two_column_div();
-$col2 ->setTwoColumnDiv($map, $recipe_card);
+$col2 ->setTwoColumnDiv($recipe_card, $profile);
 
 $col3 = new three_column_div();
-$col3 ->setThreeColumnDiv($map_card, $news, $map);
+$col3 ->setThreeColumnDiv($map, $map, $map);
 
 $col4 = new four_column_div();
-$col4 ->setFourColumnDiv($recipe_card, $news, $map, $profile);
+$col4 ->setFourColumnDiv($map, $map, $map, $map);
 
 $col5 = new five_column_div();
-$col5 ->setFiveColumnDiv($recipe_card, $news, $map, $profile, $recipe_card);
+$col5 ->setFiveColumnDiv($map, $map, $map, $map, $map);
 
 $col6 = new six_column_div();
-$col6->setSixColumnDiv($recipe_card, $news, $map, $profile, $recipe_card, $map);
+$col6->setSixColumnDiv($map, $map, $map, $map, $map, $map);
 
 
 

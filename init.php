@@ -13,7 +13,8 @@ include "Components/footer/footer.php";
 include "Components/one_column_div/one_column_div.php";
 include "Components/table/table.php";
 include "Components/img-slider/img_slider.php";
-
+include "Components/footer_2/footer_2.php";
+include "Components/section/section.php";
 
 $arrayButton = array(
     "Home" => "http://www.google.it",
@@ -22,13 +23,13 @@ $arrayButton = array(
     "House" => "http://www.google.it",
 );
 
-$arrayColumns= array("casa1","casa2","casa3","casa4");
+$arrayColumns= array("row1","row2","row3","row4");
 
 $arrayRaws = array(
-    array("casa1","casa2","casa3","casa4"),
-    array("casa1","casa2","casa3","casa4"),
-    array("casa1","casa2","casa3","casa4"),
-    array("casa1","casa2","casa3","casa4")
+    array("row1","row2","row3","row4"),
+    array("row1","row2","row3","row4"),
+    array("row1","row2","row3","row4"),
+    array("row1","row2","row3","row4")
 );
 
 $basic = new Basic_components();
@@ -62,7 +63,8 @@ $card6 = $card6 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facil
 $div3col2 = new three_column_div();
 $div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
 
-
+$section = new section();
+$section ->insertSection("This is a section Title", "This is a section Body");
 
 $map3 = new map();
 $map3 = $map3 ->setMap("università degli studi dell'aquila");
@@ -76,7 +78,7 @@ $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($map1, $map2, $map3);
 
 $div = new one_column_div();
-$div->setOneColumnDiv($map1,$map1);
+$div->setOneColumnDiv($section);
 
 
 $news = new news();
@@ -100,8 +102,7 @@ $divSlider->setOneColumnDiv($slider);
 
 
 $footer =  new footer();
+$footer->setFooter("PHPMasterTemplate","tiziocompany", "via dei ceci","345261272837","tizio#sant.it","http://www.google.it","test");
 
-
-
-$footer->setFooter("PHPMasterTemplate","tiziocompany", "via dei ceci","345261272837","tizio#sant.it","http://www.google.it","In god we trust.");
-
+$footer_2 =  new footer_2();
+$footer_2->insert_footer($arrayButton,$arrayButton,$arrayButton,$arrayButton,$arrayButton);

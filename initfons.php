@@ -31,14 +31,14 @@ $basic = new Basic_components();
 $basic->setHead("PHP Template Engine");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it");
+$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it", "");
 
 
 $card1 = new recipe_card();
 $card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
 
 $card2 = new recipe_card();
-$card2 = $card2 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
+$card2 = $card2 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "metti a bollire l'acqua, una volta che bolle butta gli spaghetti","Cuciniamo!","http://www.google.it");
 
 $card3 = new recipe_card();
 $card3 = $card3 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
