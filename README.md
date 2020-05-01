@@ -204,10 +204,31 @@ function insertSection($title,$body)
 
 The Select allows the possibility to insert on the web application a selection of something, such as the choice of language. 
 ```PHP
-function insertSelect()
+function printSelect()
 ```
 <p align="center">
 <img width="518" src="docs/select.png">
+</p>
+
+To insert the options into the select, we can use this method to be inserted into the main php file. first of all we create the single options, then we insert these options inside an array, and then we pass them as a parameter inside the function printSelect();
+
+```PHP
+$option1 = new Basic_components();
+$option1 = $option1->setOption("italiano");
+
+$option2 = new Basic_components();
+$option2 = $option2->setOption("inglese");
+
+$option3 = new Basic_components();
+$option3 = $option3->setOption("cinese");
+
+$optionArray = [$option1,$option2,$option3];
+
+$select = new Basic_components();
+$select->printSelect($optionArray);
+```
+<p align="center">
+<img width="518" src="docs/option.png">
 </p>
 
 - **TABLE**
