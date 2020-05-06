@@ -10,7 +10,7 @@ The components that the library provides are:
 
 - **NEWS** 
 
-News it is a card that allows you to insert news into the Web Application. It is a component that takes as input the following parameters in order as they are written: title, description, button name, button url and category.
+News it is a card that allows you to insert news into the Web Application. It is a component that takes as input the following String parameters in order as they are written: title, description, button name, button url and category.
 
 ```PHP
  function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL)
@@ -21,7 +21,7 @@ News it is a card that allows you to insert news into the Web Application. It is
 
 - **DIV2COL**
 
-Div2Col allows you to create a div with 2 columns and already have a pre-set and responsive page formatting, so the developer does not have to worry about anything. All types of components that already exist or those that the developer creates can be inserted inside the div. It takes as input parameters the components that want to be inserted inside the columns. in this case two components.
+Div2Col allows you to create a div with 2 columns and already have a pre-set and responsive page formatting, so the developer does not have to worry about anything. All types of components that already exist or those that the developer creates can be inserted inside the div. It takes as input parameters two object that are the components that want to be inserted inside the columns. in this case two components.
 
 ```PHP
 function setTwoColumnDiv($object1, $object2)
@@ -80,11 +80,11 @@ function setSixColumnDiv($object1, $object2, $object3,$object4, $object5, $objec
 
 The Footer component allows you to add a footer to the page.
 we created two types of footers:
-   - footer it is possible to insert a title, an address, a telephone number, an email, a link to the email, and a         description.
-   - footer 2 it is possible to insert a various sections with specific links that lead to the page.
+   - footer it is possible to insert a title, an address, a telephone number, an email, a link to the email, and a         description. It takes as input six string.
+   - footer 2 it is possible to insert a various sections with specific links that lead to the page. It takes as input five array of string.
 
 ```PHP
-function setFooter(string $title, string $completeAddress, $phoneNumber, $email, $mailLink,$description)  
+function setFooter($title, $completeAddress, $phoneNumber, $email, $mailLink, $description)  
 ```
 <p align="center">
 <img width="518" src="docs/footer1.png">
@@ -99,7 +99,7 @@ function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3
   
 - **GENERAL FORM**
 
-General form it is a generic form, mainly used to send messages, ask for information or things like that. takes as input the action of the form.
+General form it is a generic form, mainly used to send messages, ask for information or things like that. It takes as input the action of the form.
 ```PHP
 function createGeneralForm($attributes)
 ```
@@ -121,7 +121,7 @@ function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
 
 The List component allows you to insert a list within our web application that accepts parameters of any type (string, number, link, etc.). as input it takes an array which can contain elements of any type.
 ```PHP
-function setListElement(array $elements)
+function setListElement($elements)
 ```
 <p align="center">
 <img width="518" src="docs/list.png">
@@ -162,7 +162,7 @@ function insert_payment_form($attributes)
 
 - **PROFILE CARD**
 
-The Profile Card allows you to set a complete user profile, taking as input parameters that allow you to set the data to be displayed within the profile.
+The Profile Card allows you to set a complete user profile, taking as input parameters six string that allow you to set the data to be displayed within the profile.
 ```PHP
  function createProfile($name,$role,$where,$btnName,$btnURL,$img)
 ```
@@ -172,7 +172,7 @@ The Profile Card allows you to set a complete user profile, taking as input para
 
 - **RECEIPE CARD**
 
-The Receipe Card allows the possibility to insert on the web application a receipe for a typical meal, the ingredients that compose it, the difficult for its preparation and the preparation time. All elements are take in input by the function showReceipeCard.
+The Receipe Card allows the possibility to insert on the web application a receipe for a typical meal, the ingredients that compose it, the difficult for its preparation and the preparation time. All elements are take in input string by the function showReceipeCard.
 ```PHP
 function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$btnURL,$imgURL)
 ```
@@ -192,7 +192,7 @@ function createRegistrationForm($attributes)
 
 - **SECTION**
 
-The Section allows the possibility to insert a section on the web application. The parameter that it takes in input are the title and the body. 
+The Section allows the possibility to insert a section on the web application. The parameter that it takes in input are two string the title and the body. 
 ```PHP
 function insertSection($title,$body)
 ```
