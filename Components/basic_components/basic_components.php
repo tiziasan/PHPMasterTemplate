@@ -97,14 +97,19 @@ class Basic_components{
         return $component;
     }
 
-    function setOption(string $body, string $attributes = null){
-        $component = "<option ".$attributes.">".$body."</option>";
+    function setOption(string $body, string $value, string $attributes = null){
+        $component = "<option value=\"$value\" ".$attributes.">".$body."</option>";
+        return $component;
+    }
+
+    function setSelectByString(string $body, string $attributes = null){
+        $component = "<select ".$attributes.">".$body."</select>";
         return $component;
     }
     
-    function setSelect(array $elements){
+    function setSelectByOptionsArray(array $elements, string $attributes = null){
         $component="";
-        $component .= "<select>";
+        $component .= "<select ".$attributes.">";
         foreach ($elements as $element){
             $component .= $element;
         }
@@ -212,14 +217,19 @@ class Basic_components{
         echo $component;
     }
 
-    function printOption(string $body, string $attributes = null){
-        $component = "<option ".$attributes.">".$body."</option>";
+    function printOption(string $body, string $value, string $attributes = null){
+        $component = "<option value=\"$value\" ".$attributes.">".$body."</option>";
         echo $component;
     }
 
-    function printSelect(array $elements){
+    function printSelectByString(string $body, string $attributes = null){
+        $component = "<select ".$attributes.">".$body."</select>";
+        echo $component;
+    }
+
+    function printSelectByOptionsArray(array $elements, string $attributes = null){
         $component="";
-        $component .= "<select>";
+        $component .= "<select ".$attributes.">";
         foreach ($elements as $element){
             $component .= $element;
         }
