@@ -1,6 +1,6 @@
 <?php
 class registration_form{
-    function createRegistrationForm($attributes){
+    function createRegistrationForm(string $attributes){
         $component = "<div  class=\"form-rf\">
             <form ".$attributes.">
             <ul>

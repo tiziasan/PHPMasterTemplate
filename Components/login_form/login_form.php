@@ -2,7 +2,7 @@
 
 class login_form{
 
-    function login($attributes) {
+    function login(string $attributes) {
    $component = "
 <div class=\"form-container\">
     <form class=\"login form-style\" ".$attributes.">

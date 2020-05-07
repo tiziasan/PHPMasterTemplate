@@ -2,7 +2,7 @@
 
 class profile_card{
 
-    function createProfile($name,$role,$where,$btnName,$btnURL,$img="https://elysator.com/wp-content/uploads/blank-profile-picture-973460_1280-e1523978675847.png"){
+    function createProfile(string $name, string $role, string $where, string $btnName, string $btnURL, string $img="https://elysator.com/wp-content/uploads/blank-profile-picture-973460_1280-e1523978675847.png"){
         $component = "<div class=\"card text-center\">
                           <img src=\"".$img."\">
                           <h1>".$name."</h1>

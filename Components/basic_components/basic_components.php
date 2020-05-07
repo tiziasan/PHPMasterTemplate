@@ -237,7 +237,7 @@ class Basic_components{
         echo $component;
     }
 
-    function printScript(string $body, $attributes = null){
+    function printScript(string $body, string $attributes = null){
         $component = "<script ".$attributes.">".$body."</script>";
         echo $component;
     }

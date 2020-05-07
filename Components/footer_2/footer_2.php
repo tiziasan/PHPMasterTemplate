@@ -1,7 +1,7 @@
 <?php
 class footer_2{
 
-    function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3, $arrayButton4)
+    function insert_footer(array $arrayButton, array $arrayButton1, array $arrayButton2, array $arrayButton3, array $arrayButton4)
     {
 
         $button = '';
@@ -38,7 +38,8 @@ class footer_2{
 
             $button4 .= "<li>" . $k . "</li>";
         }
-            $component = "
+
+        $component = "
 
 <div class=\"footer\">
   <div class=\"contain\">
@@ -75,7 +76,6 @@ class footer_2{
 <div class=\"clearfix\"></div>
 </div>
 </div>";
-
 
             echo $component;
         }

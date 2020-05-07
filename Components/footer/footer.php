@@ -3,7 +3,7 @@ class footer
 {
 
 
-    function setFooter(string $title, string $completeAddress, $phoneNumber, $email, $mailLink,$description)
+    function setFooter(string $title, string $completeAddress, string $phoneNumber, string $email, string $mailLink,$description)
     {
         $component = "
 		<footer class=\"footer-distributed\">

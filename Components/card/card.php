@@ -2,7 +2,7 @@
 
 class card{
 
-    function setCard($object){
+    function setCard(string $object){
         $component = '<div class="card">'.
                           $object
                       .'</div>';
