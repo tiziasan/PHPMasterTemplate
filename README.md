@@ -70,7 +70,7 @@ function setFiveColumnDiv(string $object1, string $object2, string $object3, str
 
 - **DIV6COL**
 ```PHP
-function setSixColumnDiv($object1, $object2, $object3,$object4, $object5, $object6)
+function setSixColumnDiv(string $object1, string $object2, string $object3, string $object4, string $object5, string $object6)
 ```
 <p align="center">
 <img width="518" src="docs/div6.png">
@@ -194,7 +194,7 @@ function createRegistrationForm(string $attributes)
 
 The Section allows the possibility to insert a section on the web application. The parameter that it takes in input are two string the title and the body. 
 ```PHP
-function insertSection(String $title,String $body)
+function insertSection(string $title, string $body)
 ```
 <p align="center">
 <img width="518" src="docs/section.png">
