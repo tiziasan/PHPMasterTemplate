@@ -58,19 +58,21 @@ $list->printListElement($array);
 
 
 $option1 = new Basic_components();
-$option1 = $option1->setOption("italiano");
+$option1 = $option1->setOption("italiano", "it");
 
 $option2 = new Basic_components();
-$option2 = $option2->setOption("inglese");
+$option2 = $option2->setOption("inglese","en");
 
 $option3 = new Basic_components();
-$option3 = $option3->setOption("cinese");
+$option3 = $option3->setOption("cinese", "cn");
 
 $optionArray = [$option1,$option2,$option3];
 
 $select = new Basic_components();
-$select->printSelect($optionArray);
+$select->printSelectByOptionsArray($optionArray);
 
+$select2 = new Basic_components();
+$select2->printSelectByString("<option value='italia'>italia</option> <option value='cina'>cina</option> ");
 
 
 $log1 = new login_form();
@@ -101,6 +103,7 @@ $news = $news->insertNews("salvini", "ciao", "vota", "http://google.it","politic
 
 $profile = new profile_card();
 $profile = $profile ->createProfile("profile", "profile", "profile", "salva", "http://bellante.com");
+
 
 $col1 = new one_column_div();
 $col1 ->setOneColumnDiv($map_card);
