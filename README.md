@@ -13,7 +13,7 @@ The components that the library provides are:
 News it is a card that allows you to insert news into the Web Application. It is a component that takes as input the following String parameters in order as they are written: title, description, button name, button url and category.
 
 ```PHP
- function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL)
+ function insertNews(string $title, string $description, string $btnName, string $btnURL, string $category, string $imgURL)
 ```
 <p align="center">
 <img width="518" src="docs/news.png">
@@ -24,7 +24,7 @@ News it is a card that allows you to insert news into the Web Application. It is
 Div2Col allows you to create a div with 2 columns and already have a pre-set and responsive page formatting, so the developer does not have to worry about anything. All types of components that already exist or those that the developer creates can be inserted inside the div. It takes as input parameters two object that are the components that want to be inserted inside the columns. in this case two components.
 
 ```PHP
-function setTwoColumnDiv($object1, $object2)
+function setTwoColumnDiv(string $object1, string $object2)
 ```
 <p align="center">
 <img width="518" src="docs/div2.png">
@@ -35,7 +35,7 @@ Below we find all components similar to the one above, but with the number of di
 - **DIV1COL**
 
 ```PHP
-function setOneColumnDiv($object1)
+function setOneColumnDiv(string $object1)
 ```
 <p align="center">
 <img width="518" src="docs/map.png">
@@ -44,7 +44,7 @@ function setOneColumnDiv($object1)
 - **DIV3COL**
 
 ```PHP
-function setThreeColumnDiv($object1, $object2, $object3)
+function setThreeColumnDiv(string $object1, string $object2, string $object3)
 ```
 <p align="center">
 <img width="518" src="docs/div3.png">
@@ -53,7 +53,7 @@ function setThreeColumnDiv($object1, $object2, $object3)
 - **DIV4COL**
 
 ```PHP
-function setFourColumnDiv($object1, $object2, $object3, $object4)
+function setFourColumnDiv(string $object1, string $object2, string $object3, string $object4)
 ```
 <p align="center">
 <img width="518" src="docs/div4.png">
@@ -62,7 +62,7 @@ function setFourColumnDiv($object1, $object2, $object3, $object4)
 - **DIV5COL**
 
 ```PHP
-function setFiveColumnDiv($object1, $object2, $object3, $object4, $object5)
+function setFiveColumnDiv(string $object1, string $object2, string $object3, string $object4, string $object5)
 ```
 <p align="center">
 <img width="518" src="docs/div5.png">
@@ -70,7 +70,7 @@ function setFiveColumnDiv($object1, $object2, $object3, $object4, $object5)
 
 - **DIV6COL**
 ```PHP
-function setSixColumnDiv($object1, $object2, $object3,$object4, $object5, $object6)
+function setSixColumnDiv(string $object1, string $object2, string $object3, string $object4, string $object5, string $object6)
 ```
 <p align="center">
 <img width="518" src="docs/div6.png">
@@ -84,14 +84,14 @@ we created two types of footers:
    - footer 2 it is possible to insert a various sections with specific links that lead to the page. It takes as input five array of string.
 
 ```PHP
-function setFooter($title, $completeAddress, $phoneNumber, $email, $mailLink, $description)  
+function setFooter(string $title, string $completeAddress, string $phoneNumber, string $email, string $mailLink, string $description)
 ```
 <p align="center">
 <img width="518" src="docs/footer1.png">
 </p>
 
 ```PHP
-function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3, $arrayButton4)
+function insert_footer(array $arrayButton, array $arrayButton1, array $arrayButton2, array $arrayButton3, array $arrayButton4)
 ```
 <p align="center">
 <img width="518" src="docs/footer2.png">
@@ -101,7 +101,7 @@ function insert_footer($arrayButton, $arrayButton1, $arrayButton2, $arrayButton3
 
 General form it is a generic form, mainly used to send messages, ask for information or things like that. It takes as input the action of the form.
 ```PHP
-function createGeneralForm($attributes)
+function createGeneralForm(string $attributes)
 ```
 <p align="center">
 <img width="518" src="docs/generalform.png">
@@ -111,7 +111,7 @@ function createGeneralForm($attributes)
 
 Header Menu allows you to insert a menu inside the header. Inside the header we can insert all the menu items that we want through an array that we pass to it as input, together with a title, together with a url, and a search action.
 ```PHP
-function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
+function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $actionSearch)
 ```
 <p align="center">
 <img width="518" src="docs/header.png">
@@ -121,7 +121,7 @@ function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
 
 The List component allows you to insert a list within our web application that accepts parameters of any type (string, number, link, etc.). as input it takes an array which can contain elements of any type.
 ```PHP
-function setListElement($elements)
+function setListElement(array $elements)
 ```
 <p align="center">
 <img width="518" src="docs/list.png">
@@ -131,7 +131,7 @@ function setListElement($elements)
 
 The Login Form component provide a simple input form, where the user insert username and password. In input takes the attributes that is an action, where the login insert the input of the user.
 ```PHP
-function login($attribute)
+function login(string $attributes)
 ```
 <p align="center">
 <img width="518" src="docs/loginform.png">
@@ -141,7 +141,7 @@ function login($attribute)
 
 The Map component  provide a map, where the user set a location and see where the city is located. This component provide two methos, both take in input a location, but the first allows you to set the city on the map, the second allows you to view the map.
 ```PHP
-function setMap($location)
+function setMap(string $location)
 ```
 ```PHP
 function printMap($location)
@@ -154,7 +154,7 @@ function printMap($location)
 
 The Payment form provide a classic form to checkout an order, where the user insert its data(name, surname, date of the birth ecc.). Takes in input the attributes action.
 ```PHP
-function insert_payment_form($attributes)
+function inset_payment_form()
 ```
 <p align="center">
 <img width="518" src="docs/paymentform.png">
@@ -164,7 +164,7 @@ function insert_payment_form($attributes)
 
 The Profile Card allows you to set a complete user profile, taking as input parameters six string that allow you to set the data to be displayed within the profile.
 ```PHP
- function createProfile($name,$role,$where,$btnName,$btnURL,$img)
+ function createProfile(string $name, string $role, string $where, string $btnName, string $btnURL, string $img)
 ```
 <p align="center">
 <img width="518" src="docs/profile.png">
@@ -174,7 +174,7 @@ The Profile Card allows you to set a complete user profile, taking as input para
 
 The Receipe Card allows the possibility to insert on the web application a receipe for a typical meal, the ingredients that compose it, the difficult for its preparation and the preparation time. All elements are take in input string by the function showReceipeCard.
 ```PHP
-function showRecipeCard($recipeName, $time, $serving, $difficult, $description, $btnName,$btnURL,$imgURL)
+function showRecipeCard(string $recipeName, string $time, string $serving, string $difficult, string $description, string $btnName, string $btnURL, string $imgURL)
 ```
 <p align="center">
 <img width="518" src="docs/receipecard.png">
@@ -184,7 +184,7 @@ function showRecipeCard($recipeName, $time, $serving, $difficult, $description, 
 
 The Registration Form allows the possibility to insert a form on the web application to register. It is composed of the classic fields of a registration form. like the other forms it takes as input only the action parameter of the form
 ```PHP
-function createRegistrationForm($attributes)
+function createRegistrationForm(string $attributes)
 ```
 <p align="center">
 <img width="518" src="docs/registration.png">
@@ -194,7 +194,7 @@ function createRegistrationForm($attributes)
 
 The Section allows the possibility to insert a section on the web application. The parameter that it takes in input are two string the title and the body. 
 ```PHP
-function insertSection($title,$body)
+function insertSection(string $title, string $body)
 ```
 <p align="center">
 <img width="518" src="docs/section.png">
@@ -204,7 +204,7 @@ function insertSection($title,$body)
 
 The Select allows the possibility to insert on the web application a selection of something, such as the choice of language. 
 ```PHP
-function printSelect()
+function printSelectByOptionsArray(array $elements, string $attributes=null)
 ```
 <p align="center">
 <img width="518" src="docs/select.png">
@@ -250,3 +250,8 @@ function insertSlider(array $images)
 <p align="center">
 <img width="518" src="docs/slider.png">
 </p>
+
+- **BASIC_COMPONENT**
+
+The basic components are all those basic components that can be used by the user. For example a list, a title, a select etc.
+Php MasterTemplate contains a set and print method for each of these components.
