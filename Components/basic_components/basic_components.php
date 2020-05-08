@@ -272,5 +272,6 @@ class Basic_components{
         $component .= "</ul>";
         echo $component;
     }
+
 }
 
