@@ -19,26 +19,25 @@ News it is a card that allows you to insert news into the Web Application. It is
 <img width="518" src="docs/news.png">
 </p>
 
-- **DIV2COL**
-
-Div2Col allows you to create a div with 2 columns and already have a pre-set and responsive page formatting, so the developer does not have to worry about anything. All types of components that already exist or those that the developer creates can be inserted inside the div. It takes as input parameters two object that are the components that want to be inserted inside the columns. in this case two components.
-
-```PHP
-function setTwoColumnDiv(string $object1, string $object2)
-```
-<p align="center">
-<img width="518" src="docs/div2.png">
-</p>
-
-Below we find all components similar to the one above, but with the number of different columns and the parameters that it takes as input.
-
 - **DIV1COL**
+Div1Col allows you to create a div with 1 columns and already have a pre-set and responsive page formatting, so the developer does not have to worry about anything. All types of components that already exist or those that the developer creates can be inserted inside the div. It takes as input parameters one object that are the components that want to be inserted inside the columns. in this case one component.
 
 ```PHP
 function setOneColumnDiv(string $object1)
 ```
 <p align="center">
 <img width="518" src="docs/map.png">
+</p>
+
+Below we find all components similar to the one above, but with the number of different columns and the parameters that it takes as input.
+
+- **DIV2COL**
+
+```PHP
+function setTwoColumnDiv(string $object1, string $object2)
+```
+<p align="center">
+<img width="518" src="docs/div2.png">
 </p>
 
 - **DIV3COL**
@@ -214,13 +213,13 @@ To insert the options into the select, we can use this method to be inserted int
 
 ```PHP
 $option1 = new Basic_components();
-$option1 = $option1->setOption("italiano");
+$option1 = $option1->setOption("italiano", "it");
 
 $option2 = new Basic_components();
-$option2 = $option2->setOption("inglese");
+$option2 = $option2->setOption("inglese", "en");
 
 $option3 = new Basic_components();
-$option3 = $option3->setOption("cinese");
+$option3 = $option3->setOption("cinese", "cn");
 
 $optionArray = [$option1,$option2,$option3];
 
