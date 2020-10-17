@@ -1,7 +1,7 @@
 <?php
 
 class six_column_div{
-    function setSixColumnDiv($object1, $object2, $object3,$object4, $object5, $object6){
+    function setSixColumnDiv(string $object1, string $object2, string $object3, string $object4, string $object5, string $object6){
         $component = '<div class="row">
                           <div class="column column-6">'.$object1.'</div>
                           <div class="column column-6">'.$object2.'</div>

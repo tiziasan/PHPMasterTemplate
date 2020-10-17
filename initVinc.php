@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set("display_errors","On");
 
 include_once "Components/basic_components/basic_components.php";
+include_once "Components/card/card.php";
 include_once "Components/five_column_div/five_column_div.php";
 include_once "Components/footer/footer.php";
 include_once "Components/footer_2/footer_2.php";
@@ -22,7 +23,6 @@ include_once "Components/six_column_div/six_column_div.php";
 include_once "Components/table/table.php";
 include_once "Components/three_column_div/three_column_div.php";
 include_once "Components/two_column_div/two_column_div.php";
-include_once "Components/user_profile/user_profile.php";
 
 
 $arrayButton = array(
@@ -58,23 +58,25 @@ $list->printListElement($array);
 
 
 $option1 = new Basic_components();
-$option1 = $option1->setOption("italiano");
+$option1 = $option1->setOption("italiano", "it");
 
 $option2 = new Basic_components();
-$option2 = $option2->setOption("inglese");
+$option2 = $option2->setOption("inglese","en");
 
 $option3 = new Basic_components();
-$option3 = $option3->setOption("cinese");
+$option3 = $option3->setOption("cinese", "cn");
 
 $optionArray = [$option1,$option2,$option3];
 
 $select = new Basic_components();
-$select->printSelect($optionArray);
+$select->printSelectByOptionsArray($optionArray);
 
+$select2 = new Basic_components();
+$select2->printSelectByString("<option value='italia'>italia</option> <option value='cina'>cina</option> ");
 
 
 $log1 = new login_form();
-$log1 = $log1 -> login("action=fons.php");
+$log1 = $log1->login("action=fons.php");
 
 $gf = new general_form();
 $gf = $gf->createGeneralForm( "action=fons.php");
@@ -83,12 +85,15 @@ $pf = new payment_form();
 $pf = $pf->inset_payment_form();
 
 $col3 = new three_column_div();
-$col3 ->setThreeColumnDiv($log1, $gf, $pf);
+$col3->setThreeColumnDiv($log1, $gf, $pf);
 
 
 
 $map = new map();
 $map = $map->setMap("università degli studi dell'aquila");
+
+$map_card = new card();
+$map_card = $map_card->setCard($map);
 
 $recipe_card = new recipe_card();
 $recipe_card = $recipe_card -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
@@ -97,25 +102,26 @@ $news = new news();
 $news = $news->insertNews("salvini", "ciao", "vota", "http://google.it","politica");
 
 $profile = new profile_card();
-$profile = $profile ->createProfile("fons", "attaccante", "bllint", "chiama il sindaco", "http://bellante.com");
+$profile = $profile ->createProfile("profile", "profile", "profile", "salva", "http://bellante.com");
+
 
 $col1 = new one_column_div();
-$col1 ->setOneColumnDiv($map);
+$col1 ->setOneColumnDiv($map_card);
 
 $col2 = new two_column_div();
-$col2 ->setTwoColumnDiv($map, $recipe_card);
+$col2 ->setTwoColumnDiv($recipe_card, $profile);
 
 $col3 = new three_column_div();
-$col3 ->setThreeColumnDiv($recipe_card, $news, $map);
+$col3 ->setThreeColumnDiv($map, $map, $map);
 
 $col4 = new four_column_div();
-$col4 ->setFourColumnDiv($recipe_card, $news, $map, $profile);
+$col4 ->setFourColumnDiv($map, $map, $map, $map);
 
 $col5 = new five_column_div();
-$col5 ->setFiveColumnDiv($recipe_card, $news, $map, $profile, $recipe_card);
+$col5 ->setFiveColumnDiv($map, $map, $map, $map, $map);
 
 $col6 = new six_column_div();
-$col6->setSixColumnDiv($recipe_card, $news, $map, $profile, $recipe_card, $map);
+$col6->setSixColumnDiv($map, $map, $map, $map, $map, $map);
 
 
 

@@ -3,11 +3,9 @@
     -webkit-box-sizing: border-box;
 }
 
-
 html, body {
     height: 100%;
 }
-
 
 body{
     margin: 0;
@@ -56,20 +54,14 @@ COLONNE
 FORM-CONTAINER
 =====================================================================================================*/
 .form-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 20px;
 }
 
 .form-container .form-style{
     max-width: 450px;
     background: #FAFAFA;
     padding: 30px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     border: 6px solid #EF3E36;
 }
@@ -87,7 +79,55 @@ FORM-CONTAINER
     font-size: 18px;
 }
 
-
+/*===================================================================================================
+CARD-CONTAINER
+=====================================================================================================*/
+.card {
+    position: relative;
+    background: #fff;
+    max-width: 500px;
+    margin: auto;
+    word-break: break-all;
+    border-radius: 10px;
+    border: 6px solid #EF3E36;
+}
+.card img {
+    max-width: 100%;
+}
+.card .header {
+    background-size: cover;
+    min-height: 350px;
+}
+.card .text .title {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+.card .stars {
+    margin: 10px 30px;
+}
+.card .stars li a i {
+    color: #FFE500;
+}
+.card .info {
+    margin: 10px 30px;
+}
+.card a.btn {
+    display: block;
+    background: #EF3E36;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+}
+.card a.btn:hover {
+    background: #17BEBB;
+    transition: 250ms;
+}
 
 
 

@@ -41,20 +41,5 @@
     height: 100px;
 }
 
-.submit-gf{
-    -webkit-appearance: push-button;
-    user-select: none;
-    white-space: pre;
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    color: buttontext;
-    background-color: buttonface;
-    box-sizing: border-box;
-    padding: 1px 7px 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #EF3E36;
-    border-image: initial;
-}
+
 

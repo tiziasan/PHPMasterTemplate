@@ -2,11 +2,11 @@
 
 class news{
 
-    function insertNews($title, $description, $btnName,$btnURL,$category,$imgURL = "https://www.admassociati.it/wp-content/uploads/2017/08/news.jpg"){
+    function insertNews(string $title, string $description, string $btnName, string $btnURL, string $category, string $imgURL = "https://www.admassociati.it/wp-content/uploads/2017/08/news.jpg"){
         $component = "<div class=\"card\">
-   <img class='img-news' src='".$imgURL."'>
+   <img src='".$imgURL."'>
    <div class=\"text\">
-      <h1 class=\"food\">
+      <h1 class=\"title\">
          ".$title."
       </h1>
             <i class=\"fa fa-clock-o\">".$category."</i>

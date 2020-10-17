@@ -1,15 +1,22 @@
-.card-profile{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    margin: auto;
+.text-center{
     text-align: center;
-    font-family: arial;
 }
 
 .title-profile{
     color: grey;
     font-size: 18px;
-    margin: 24px 0px;
+    margin: 24px 0;
+}
+
+.p-profile{
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .button-profile{
@@ -24,18 +31,8 @@
     width: 100%;
     font-size: 18px;
 }
-button:hover {
-    opacity: 0.7;
-    background: #17BEBB;
-}
 
-.p-profile{
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+.button-profile:hover {
+    background: #17BEBB;
+    transition: 250ms;
 }

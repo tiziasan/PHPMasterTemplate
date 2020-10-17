@@ -7,6 +7,9 @@ class Basic_components{
 
         $component .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
                        <meta name=\"viewport\" content=\"width=device-width\">";
+
+        $component .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
+
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
         $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
@@ -34,37 +37,37 @@ class Basic_components{
 
     }
 
-    function setH1($body,$attributes = null){
+    function setH1(string $body, string $attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
         return $component;
     }
 
-    function setH2($body,$attributes = null){
+    function setH2(string $body, string $attributes = null){
         $component = "<h2 ". $attributes .  ">".$body."</h2>";
         return $component;
     }
 
-    function setH3($body,$attributes = null){
+    function setH3(string $body, string $attributes = null){
         $component = "<h3 ". $attributes .  ">".$body."</h3>";
         return $component;
     }
 
-    function setH4($body,$attributes = null){
+    function setH4(string $body, string $attributes = null){
         $component = "<h4 ". $attributes .  ">".$body."</h4>";
         return $component;
     }
 
-    function setH5($body,$attributes = null){
+    function setH5(string $body, string $attributes = null){
         $component = "<h5 ". $attributes .  ">".$body."</h5>";
         return $component;
     }
 
-    function setH6($body,$attributes = null){
+    function setH6(string $body, string $attributes = null){
         $component = "<h6 ". $attributes .  ">".$body."</h6>";
         return $component;
     }
 
-    function setInput($attributes = null){
+    function setInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         return $component;
     }
@@ -73,35 +76,40 @@ class Basic_components{
         $component = "<br>";
         return $component;
     }
-    function setButton($body, $attributes = null){
+    function setButton(string $body, string $attributes = null){
         $component = "<button ".$attributes.">".$body."</button>";
         return $component;
 
     }
-    function setImg($attributes = null){
+    function setImg(string $attributes = null){
         $component = "<img".$attributes.">";
         return $component;
 
     }
 
-    function setLabel($body, $attributes = null){
+    function setLabel(string $body, string $attributes = null){
         $component = "<label ".$attributes.">".$body."</label>";
         return $component;
     }
 
-    function setAReference($body, $attributes = null){
+    function setAReference(string $body, string $attributes = null){
         $component = "<a ".$attributes.">".$body."</a>";
         return $component;
     }
 
-    function setOption($body, $attributes = null){
-        $component = "<option ".$attributes.">".$body."</option>";
+    function setOption(string $body, string $value, string $attributes = null){
+        $component = "<option value=\"$value\" ".$attributes.">".$body."</option>";
+        return $component;
+    }
+
+    function setSelectByString(string $body, string $attributes = null){
+        $component = "<select ".$attributes.">".$body."</select>";
         return $component;
     }
     
-    function setSelect(array $elements){
+    function setSelectByOptionsArray(array $elements, string $attributes = null){
         $component="";
-        $component .= "<select>";
+        $component .= "<select ".$attributes.">";
         foreach ($elements as $element){
             $component .= $element;
         }
@@ -109,27 +117,27 @@ class Basic_components{
         return $component;
     }
 
-    function setParagraph($body, $attributes = null){
+    function setParagraph(string $body, string $attributes = null){
         $component = "<p ".$attributes.">".$body."</p>";
         return $component;
     }
 
-    function setQuote($body, $attributes = null){
+    function setQuote(string $body, string $attributes = null){
         $component = "<q ".$attributes.">".$body."</q>";
         return $component;
     }
 
-    function setScript($body, $attributes = null){
+    function setScript(string $body, string $attributes = null){
         $component = "<script ".$attributes.">".$body."</script>";
         return $component;
     }
 
-    function setTextArea($body, $attributes = null){
+    function setTextArea(string $body, string $attributes = null){
         $component = "<textarea ".$attributes.">".$body."</textarea>";
         return $component;
     }
 
-    function setListItem($body, $attributes = null){
+    function setListItem(string $body, string $attributes = null){
         $component = "<li ".$attributes.">".$body."</li>";
         return $component;
     }
@@ -149,37 +157,37 @@ class Basic_components{
 
 
 
-    function printH1($body,$attributes = null){
+    function printH1(string $body, string $attributes = null){
         $component = "<h1 ". $attributes .  ">".$body."</h1>";
         echo $component;
     }
 
-    function printH2($body,$attributes = null){
+    function printH2(string $body, string $attributes = null){
         $component = "<h2 ". $attributes .  ">".$body."</h2>";
         echo $component;
     }
 
-    function printH3($body,$attributes = null){
+    function printH3(string $body, string $attributes = null){
         $component = "<h3 ". $attributes .  ">".$body."</h3>";
         echo $component;
     }
 
-    function printH4($body,$attributes = null){
+    function printH4(string $body, string $attributes = null){
         $component = "<h4 ". $attributes .  ">".$body."</h4>";
         echo $component;
     }
 
-    function printH5($body,$attributes = null){
+    function printH5(string $body, string $attributes = null){
         $component = "<h5 ". $attributes .  ">".$body."</h5>";
         echo $component;
     }
 
-    function printH6($body,$attributes = null){
+    function printH6(string $body, string $attributes = null){
         $component = "<h6 ". $attributes .  ">".$body."</h6>";
         echo $component;
     }
 
-    function printInput($attributes = null){
+    function printInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         echo $component;
     }
@@ -188,35 +196,40 @@ class Basic_components{
         $component = "<br>";
         echo $component;
     }
-    function printButton($body, $attributes = null){
+    function printButton(string $body, string $attributes = null){
         $component = "<button ".$attributes.">".$body."</button>";
         echo $component;
 
     }
-    function printImg($attributes = null){
+    function printImg(string $attributes = null){
         $component = "<img".$attributes.">";
         echo $component;
 
     }
 
-    function printLabel($body, $attributes = null){
+    function printLabel(string $body, string $attributes = null){
         $component = "<label ".$attributes.">".$body."</label>";
         echo $component;
     }
 
-    function printAReference($body, $attributes = null){
+    function printAReference(string $body, string $attributes = null){
         $component = "<a ".$attributes.">".$body."</a>";
         echo $component;
     }
 
-    function printOption($body, $attributes = null){
-        $component = "<option ".$attributes.">".$body."</option>";
+    function printOption(string $body, string $value, string $attributes = null){
+        $component = "<option value=\"$value\" ".$attributes.">".$body."</option>";
         echo $component;
     }
 
-    function printSelect(array $elements){
+    function printSelectByString(string $body, string $attributes = null){
+        $component = "<select ".$attributes.">".$body."</select>";
+        echo $component;
+    }
+
+    function printSelectByOptionsArray(array $elements, string $attributes = null){
         $component="";
-        $component .= "<select>";
+        $component .= "<select ".$attributes.">";
         foreach ($elements as $element){
             $component .= $element;
         }
@@ -224,27 +237,27 @@ class Basic_components{
         echo $component;
     }
 
-    function printParagraph($body, $attributes = null){
+    function printParagraph(string $body, string $attributes = null){
         $component = "<p ".$attributes.">".$body."</p>";
         echo $component;
     }
 
-    function printQuote($body, $attributes = null){
+    function printQuote(string $body, string $attributes = null){
         $component = "<q ".$attributes.">".$body."</q>";
         echo $component;
     }
 
-    function printScript($body, $attributes = null){
+    function printScript(string $body, string $attributes = null){
         $component = "<script ".$attributes.">".$body."</script>";
         echo $component;
     }
 
-    function printTextArea($body, $attributes = null){
+    function printTextArea(string $body, string $attributes = null){
         $component = "<textarea ".$attributes.">".$body."</textarea>";
         echo $component;
     }
 
-    function printListItem($body, $attributes = null){
+    function printListItem(string $body, string $attributes = null){
         $component = "<li ".$attributes.">".$body."</li>";
         echo $component;
     }
@@ -259,5 +272,6 @@ class Basic_components{
         $component .= "</ul>";
         echo $component;
     }
+
 }
 

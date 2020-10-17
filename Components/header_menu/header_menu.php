@@ -2,7 +2,7 @@
 
 class header_menu {
 
-    function showHeaderMenu($arrayButton,$pageTitle,$homeURL,$actionSearch)
+    function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $actionSearch)
     {
         $button = '';
 
