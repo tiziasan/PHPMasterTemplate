@@ -37,6 +37,8 @@ $basic->setHead("PHP Template Engine");
 $headerMenu = new header_menu();
 $headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it",'cerca.php');
 
+$title = new Basic_components();
+$title = $title -> printH1("Benvenuti al nostro blog dio cucina");
 
 $card1 = new recipe_card();
 $card1 = $card1 -> showRecipeCard("Spaghetti", "30 minuti", "3 porzioni", "Facile", "Se usi la pancetta non sei Italiano!","Cuciniamo!","http://www.google.it");
@@ -92,7 +94,7 @@ $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 $table = new table();
 $table->setTable($arrayColumns, $arrayRaws);
 
-$images = array("https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg","https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg","https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-600w-789676552.jpg");
+$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png","https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg","https://lh3.googleusercontent.com/proxy/hJW1plB86-Ni3ivEIIp_-_gOPjdCBWzn0YxFejPT_K6DhAMnsvgJt9goPYSOr-LKhhs-PdIJjfAFD-JshKXtcTuWjFnoTwjJgNtuO5JYx9i6xc2S_MGNqbCyHKqaqXg2NkRpomrXStoA6XT_qg8");
 $slider= new img_slider();
 $slider = $slider->insertSlider($images);
 $divSlider = new one_column_div();
