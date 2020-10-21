@@ -63,7 +63,6 @@ FORM-CONTAINER
     background: #FAFAFA;
     padding: 30px;
     border-radius: 10px;
-    border: 6px solid #EF3E36;
 }
 
 .form-container .button{
@@ -89,7 +88,6 @@ CARD-CONTAINER
     margin: auto;
     word-break: break-all;
     border-radius: 10px;
-    border: 6px solid #EF3E36;
 }
 .card img {
     max-width: 100%;
@@ -100,7 +98,7 @@ CARD-CONTAINER
 }
 .card .text .title {
     color: #212129;
-    text-align: left;
+    text-align: center;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;

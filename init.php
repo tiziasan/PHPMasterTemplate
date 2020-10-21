@@ -79,8 +79,7 @@ $map1 = $map1->setMap("università degli studi dell'aquila");
 $div3col4 = new three_column_div();
 $div3col4 ->setThreeColumnDiv($map1, $map2, $map3);
 
-$div = new one_column_div();
-$div->setOneColumnDiv($section);
+
 
 
 $news = new news();
@@ -96,7 +95,7 @@ $div3col3 ->setThreeColumnDiv($news, $news1, $news2);
 $table = new table();
 $table->setTable($arrayColumns, $arrayRaws);
 
-$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png","https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg","https://lh3.googleusercontent.com/proxy/hJW1plB86-Ni3ivEIIp_-_gOPjdCBWzn0YxFejPT_K6DhAMnsvgJt9goPYSOr-LKhhs-PdIJjfAFD-JshKXtcTuWjFnoTwjJgNtuO5JYx9i6xc2S_MGNqbCyHKqaqXg2NkRpomrXStoA6XT_qg8");
+$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png","https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg","https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_1280.jpg");
 $slider= new img_slider();
 $slider = $slider->insertSlider($images);
 $divSlider = new one_column_div();
@@ -105,6 +104,3 @@ $divSlider->setOneColumnDiv($slider);
 
 $footer =  new footer();
 $footer->setFooter("PHPMasterTemplate","tiziocompany", "via dei ceci","345261272837","tizio#sant.it","http://www.google.it","test");
-
-$footer_2 =  new footer_2();
-$footer_2->insert_footer($arrayButton,$arrayButton,$arrayButton,$arrayButton,$arrayButton);
