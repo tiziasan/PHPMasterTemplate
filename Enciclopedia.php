@@ -65,4 +65,4 @@ $div2 -> setTwoColumnDiv($para2, $pay, "#ffffff");
 
 
 $footer =  new footer();
-$footer->setFooter("Cucina 2.0","via Roma, Milano", "3490392829","tizianosantilli@gmail.com","tizio#sant.it","Siamo quello che mangiamo");
+$footer->setFooter("Enciclopedia della storia Italiana","via Roma, Milano", "3490392829","tizianosantilli@gmail.com","tizio#sant.it","Mondadori editions");

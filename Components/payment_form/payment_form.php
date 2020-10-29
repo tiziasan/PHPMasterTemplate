@@ -60,9 +60,7 @@ class payment_form{
                                   </div>
                         
                                 </div>
-                                <label class = \"labelpf\">
-                                  <input type=\"checkbox\" checked=\"checked\" name=\"sameadr\"> Shipping address same as billing
-                                </label>
+                               
                                 <input type=\"submit\" value=\"Continue to checkout\" class=\"button\">
                               </form>
                         </div>";
