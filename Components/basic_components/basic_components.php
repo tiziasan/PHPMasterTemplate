@@ -10,26 +10,8 @@ class Basic_components{
 
         $component .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
 
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/profile_card/profile_card_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/header_menu/header_menu_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/one_column_div/one_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/two_column_div/two_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/three_column_div/three_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/four_column_div/four_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/five_column_div/five_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/six_column_div/six_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/map/map_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/general_form/general_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/registration_form/registration_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer/footer_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer_2/footer_2_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/payment_form/payment_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/img-slider/img_slider_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"../../Components/basic_components/style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"../../Components/basic_components/dependences.css\">";
 
         $component .= "</head>";
 
