@@ -82,7 +82,7 @@ class Basic_components{
 
     }
     function setImg(string $attributes = null){
-        $component = "<img".$attributes.">";
+        $component = "<img ".$attributes.">";
         return $component;
 
     }
@@ -202,7 +202,7 @@ class Basic_components{
 
     }
     function printImg(string $attributes = null){
-        $component = "<img".$attributes.">";
+        $component = "<img ".$attributes.">";
         echo $component;
 
     }

@@ -1,5 +1,6 @@
 .column-2 {
     float: left;
-    width: 50%;
     padding: 2%;
+    padding-left: 20%;
+    width: 40%;
 }

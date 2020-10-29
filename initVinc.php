@@ -37,7 +37,7 @@ $basic = new Basic_components();
 $basic->setHead("PHP Template Engine");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it",'cerca.php');
+$headerMenu ->showHeaderMenu($arrayButton,"PHP Template Engine","http://www.google.it",'#999999');
 
 
 $element1 = new Basic_components();
@@ -109,7 +109,7 @@ $col1 = new one_column_div();
 $col1 ->setOneColumnDiv($map_card);
 
 $col2 = new two_column_div();
-$col2 ->setTwoColumnDiv($recipe_card, $profile);
+$col2 ->setTwoColumnDiv($recipe_card, $profile,'#999999');
 
 $col3 = new three_column_div();
 $col3 ->setThreeColumnDiv($map, $map, $map);
