@@ -2,7 +2,7 @@
 
 class header_menu {
 
-    function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $actionSearch)
+    function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $actionSearch ,string $bgColor)
     {
         $button = '';
 
@@ -12,7 +12,7 @@ class header_menu {
 
         }
 
-        $content = "<div class=\"header\">
+        $content = "<div class=\"header\" style= background-color: \"".$bgColor."\">
                       <a href=\"".$homeURL."\" class=\"logo\">".$pageTitle."</a>
                         <form class='searchClass' action='".$actionSearch."'>
                          <div class=\"header-right\">

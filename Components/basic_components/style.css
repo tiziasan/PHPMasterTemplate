@@ -54,8 +54,10 @@ COLONNE
 FORM-CONTAINER
 =====================================================================================================*/
 .form-container {
-    width: 100%;
     min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 .form-container .form-style{
