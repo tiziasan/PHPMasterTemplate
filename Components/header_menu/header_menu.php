@@ -2,13 +2,13 @@
 
 class header_menu {
 
-    function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $actionSearch, string $textColor = "#fff", string $bgColor = "#40c4ff")
+    function showHeaderMenu(array $arrayButton, string $pageTitle, string $homeURL, string $textColor = "#fff", string $bgColor = "#40c4ff")
     {
-        $button = '';
+        $buttons = '';
 
         foreach ($arrayButton as $k => $v) {
 
-            $button .= "<a href=\"".$v."\">".$k."</a>";
+            $buttons .= "<a href=\"".$v."\">".$k."</a>";
 
         }
 
@@ -17,8 +17,8 @@ class header_menu {
                       <a href=\"".$homeURL."\" class=\"logo\">".$pageTitle."</a>
                         <form class='searchClass'>
                          <div class=\"header-right\">
-                        ".$button."
-                                            </div>
+                        ".$buttons."
+                         </div>
 
                     </form>
                       

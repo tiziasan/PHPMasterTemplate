@@ -34,7 +34,7 @@ $basic = new Basic_components();
 $basic->setHead("Arch. Mario Rossi");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"Arch. Mario Rossi","./index.php",'cerca.php',"#fff","#2c292f");
+$headerMenu ->showHeaderMenu($arrayButton,"Arch. Mario Rossi","./index.php","#fff","#2c292f");
 
 
 $title = new Basic_components();

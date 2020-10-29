@@ -22,7 +22,7 @@ $basic->setHead("Cucina 2.0");
 
 $headerMenu = new header_menu();
 
-$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","./index.php",'cerca.php',"#fff","#40c4ff");
+$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","./index.php","#fff","#40c4ff");
 
 $title = new Basic_components();
 $title -> printH1("Benvenuti al nostro blog di cucina","style='color:#2196f3; text-align:center;'");
