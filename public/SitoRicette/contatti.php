@@ -2,16 +2,16 @@
 error_reporting(E_ALL);
 ini_set("display_errors","On");
 
-include "Components/basic_components/basic_components.php";
-include "Components/header_menu/header_menu.php";
-include "Components/footer/footer.php";
-include "Components/general_form/general_form.php";
-include "Components/one_column_div/one_column_div.php";
+include "../../Components/basic_components/basic_components.php";
+include "../../Components/header_menu/header_menu.php";
+include "../../Components/footer/footer.php";
+include "../../Components/general_form/general_form.php";
+include "../../Components/one_column_div/one_column_div.php";
 
 $arrayButton = array(
-    "Home" => "./SitoRicette.php",
-    "Tutte le Ricette" => "./SitoRicette.php",
-    "Contattaci" => "./SitoRicetteContatti.php",
+    "Home" => "./index.php",
+    "Tutte le Ricette" => "./index.php",
+    "Contattaci" => "./contatti.php",
 );
 
 $basic = new Basic_components();

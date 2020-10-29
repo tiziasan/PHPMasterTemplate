@@ -1,16 +1,16 @@
 <?php
 
 
-include "Components/basic_components/basic_components.php";
-include "Components/recipe_card/recipe_card.php";
-include "Components/three_column_div/three_column_div.php";
-include "Components/header_menu/header_menu.php";
-include "Components/footer/footer.php";
+include "../../Components/basic_components/basic_components.php";
+include "../../Components/recipe_card/recipe_card.php";
+include "../../Components/three_column_div/three_column_div.php";
+include "../../Components/header_menu/header_menu.php";
+include "../../Components/footer/footer.php";
 
 $arrayButton = array(
     "Home" => "#",
-    "Tutte le Ricette" => "./SitoRicette.php",
-    "Contattaci" => "./SitoRicetteContatti.php",
+    "Tutte le Ricette" => "./index.php",
+    "Contattaci" => "./contatti.php",
 );
 
 $images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png",
@@ -36,7 +36,7 @@ $card2 = new recipe_card();
 $card2 = $card2 -> showRecipeCard("Bucatini all'Amatriciana", "30 minuti", "4 porzioni", "Facile", "Una pietra miliare della cucina, solo se il guanciale è bello croccante!!","Scopri la ricetta!","http://www.google.it", "https://www.ricettedalmondo.it/images/foto-ricette/b/122-bucatini-alla-amatriciana.jpg");
 
 $card3 = new recipe_card();
-$card3 = $card3 -> showRecipeCard("Cheescake ai frutti rossi", "15 minuti", "4 porzioni", "Media", "Un dolce americano, ma che piace in tutto il mondo!","Scopri la ricetta!","http://www.google.it", "https://images.fidhouse.com/fidelitynews/wp-content/uploads/sites/6/2014/05/fredda3.jpg");
+$card3 = $card3 -> showRecipeCard("Cheescake ai frutti rossi", "15 minuti", "4 porzioni", "Media", "Un dolce americano cremoso e sfizioso che piace in tutto il mondo!","Scopri la ricetta!","http://www.google.it", "https://images.fidhouse.com/fidelitynews/wp-content/uploads/sites/6/2014/05/fredda3.jpg");
 
 $div3col = new three_column_div();
 $div3col ->setThreeColumnDiv($card1, $card2, $card3);
