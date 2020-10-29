@@ -50,7 +50,7 @@ $author_cit = new Basic_components();
 $author_cit = $author_cit -> setH6("cit. ELIEL SAARINEN","style='color:#2196f3; text-align:center; margin: 10px 170px;'");
 
 $info = new Basic_components();
-$info = $info -> setContainerByArray([$title,$subtitle,$cit, $author_cit]);
+$info = $info -> setContainerByArray([$title,$subtitle,$cit, $author_cit], "style= 'margin-top: 20%;'");
 
 $img = new Basic_components();
 $img = $img -> setImg("https://casaegiardino.info/wp-content/uploads/2020/04/Casa-e-Giardino-Sergio_0581-1067x800.jpg");
