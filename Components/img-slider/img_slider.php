@@ -11,7 +11,7 @@ class img_slider
         $component .= "<div class=\"slides\">";
 
         for ($i = 0; $i < count($images); $i++){
-            $component .= "<img width = '600px' height = '300px' id=\"slide-".$i."\" src=\"".$images[$i]."\">";
+            $component .= "<img width = '800px' id=\"slide-".$i."\" src=\"".$images[$i]."\">";
         }
         $component .= "</div></div>";
 
