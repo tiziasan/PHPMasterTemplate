@@ -18,9 +18,10 @@ $basic = new Basic_components();
 $basic->setHead("Cucina 2.0");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","/PHPMasterTemplate/SitoRicette.php",'cerca.php', "#40c4ff");
+$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","./index.php",'cerca.php',"#fff", "#40c4ff");
+
 $title = new Basic_components();
-$title = $title -> printH1("Hai un suggerimento per qualche ricetta? Contattaci!","style='color:#2196f3;text-align:center;'");
+$title -> printH1("Hai un suggerimento per qualche ricetta? Contattaci!","style='color:#2196f3;text-align:center;'");
 
 $form = new general_form();
 $form = $form-> createGeneralForm('test');

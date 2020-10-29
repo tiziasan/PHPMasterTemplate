@@ -1,6 +1,5 @@
 <?php
 
-
 include "../../Components/basic_components/basic_components.php";
 include "../../Components/recipe_card/recipe_card.php";
 include "../../Components/three_column_div/three_column_div.php";
@@ -8,7 +7,7 @@ include "../../Components/header_menu/header_menu.php";
 include "../../Components/footer/footer.php";
 
 $arrayButton = array(
-    "Home" => "#",
+    "Home" => "./index.php",
     "Tutte le Ricette" => "./index.php",
     "Contattaci" => "./contatti.php",
 );
@@ -22,12 +21,12 @@ $basic = new Basic_components();
 $basic->setHead("Cucina 2.0");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","#",'cerca.php',"#40c4ff");
+$headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","./index.php",'cerca.php',"#fff","#40c4ff");
 
 $title = new Basic_components();
-$title = $title -> printH1("Benvenuti al nostro blog di cucina","style='color:#2196f3; text-align:center;'");
+$title -> printH1("Benvenuti al nostro blog di cucina","style='color:#2196f3; text-align:center;'");
 $subtitle = new Basic_components();
-$subtitle = $subtitle -> printH3("Nel blog Pensieri e Fornelli trovate una serie di ricette illustrate con foto. Antipasti, dolci, primi piatti, secondi, finger food e ricette per bambini. Come riporta il sito, gli autori, un’appassionata di cucina e un abile programmatore, si rivolgono a chi “non mette le sottilette nella parmigiana di melanzane.”","style='color:#2196f3; text-align:center; margin-left: 170px; margin-right: 170px'");
+$subtitle -> printH3("Nel blog Pensieri e Fornelli trovate una serie di ricette illustrate con foto. Antipasti, dolci, primi piatti, secondi, finger food e ricette per bambini. Come riporta il sito, gli autori, un’appassionata di cucina e un abile programmatore, si rivolgono a chi “non mette le sottilette nella parmigiana di melanzane.”","style='color:#2196f3; text-align:center; margin-left: 170px; margin-right: 170px'");
 
 $card1 = new recipe_card();
 $card1 = $card1 -> showRecipeCard("Spaghetti alla Carbonara", "20 minuti", "4 porzioni", "Facile", "Un classico della cucina italiana, attento alle uova e al guanciale!","Scopri la ricetta!","http://www.google.it","https://www.tavolartegusto.it/wp/wp-content/uploads/2020/03/Carbonara-Spaghetti-alla-carbonara-Ricetta-Carbonara.jpg");
