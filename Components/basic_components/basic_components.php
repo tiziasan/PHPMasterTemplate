@@ -49,6 +49,15 @@ class Basic_components{
         return $component;
     }
 
+    function setContainer(array $body, string $attributes = null){
+        $component = "<div ". $attributes .  ">";
+        foreach ($body as $element){
+            $component .= $element;
+        }
+        $component .= "</div>";
+        return $component;
+    }
+
     function setInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         return $component;
@@ -63,8 +72,8 @@ class Basic_components{
         return $component;
 
     }
-    function setImg(string $attributes = null){
-        $component = "<img".$attributes.">";
+    function setImg(string $src, string $attributes = null){
+        $component = "<img src=\"".$src. "\" " .$attributes.">";
         return $component;
 
     }
@@ -169,6 +178,15 @@ class Basic_components{
         echo $component;
     }
 
+    function printContainer(array $body, string $attributes = null){
+        $content = "";
+        foreach ($body as $element){
+            $content .= $element;
+        }
+        $component = "<div ". $attributes .  ">". $content. "</div>";
+        return $component;
+    }
+
     function printInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         echo $component;
@@ -183,8 +201,8 @@ class Basic_components{
         echo $component;
 
     }
-    function printImg(string $attributes = null){
-        $component = "<img".$attributes.">";
+    function printImg(string $src, string $attributes = null){
+        $component = "<img src=\"".$src. "\" " .$attributes.">";
         echo $component;
 
     }

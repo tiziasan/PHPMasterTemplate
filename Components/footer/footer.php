@@ -3,10 +3,10 @@ class footer
 {
 
 
-    function setFooter(string $title, string $completeAddress, string $phoneNumber, string $email, string $mailLink, string $description)
+    function setFooter(string $title, string $completeAddress, string $phoneNumber, string $email, string $mailLink, string $description, string $attributes = null)
     {
         $component = "
-		<footer class=\"footer-distributed\">
+		<footer class=\"footer-distributed\" ".$attributes.">
 			<div class=\"footer-left\">
 				<h3>".$title."</h3>
 			</div>
