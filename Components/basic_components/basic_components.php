@@ -10,26 +10,8 @@ class Basic_components{
 
         $component .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
 
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/basic_components/style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/recipe_card/recipe_card_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/login_form/login_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/profile_card/profile_card_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/header_menu/header_menu_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/one_column_div/one_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/two_column_div/two_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/three_column_div/three_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/four_column_div/four_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/five_column_div/five_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/six_column_div/six_column_div_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/map/map_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/news/news_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/general_form/general_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/registration_form/registration_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer/footer_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/footer_2/footer_2_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/payment_form/payment_form_style.css\">";
-        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"Components/img-slider/img_slider_style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"../../Components/basic_components/style.css\">";
+        $component .= "<link rel=\"stylesheet\" type=\"text/css\" href=\"../../Components/basic_components/dependences.css\">";
 
         $component .= "</head>";
 
@@ -67,6 +49,20 @@ class Basic_components{
         return $component;
     }
 
+    function setContainer(string $body, string $attributes = null){
+        $component = "<div ". $attributes . ">".$body. "</div>";
+        return $component;
+    }
+
+    function setContainerByArray(array $body, string $attributes = null){
+        $component = "<div ". $attributes .  ">";
+        foreach ($body as $element){
+            $component .= $element;
+        }
+        $component .= "</div>";
+        return $component;
+    }
+
     function setInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         return $component;
@@ -81,8 +77,9 @@ class Basic_components{
         return $component;
 
     }
-    function setImg(string $attributes = null){
-        $component = "<img ".$attributes.">";
+
+    function setImg(string $src, string $attributes = null){
+        $component = "<img src=\"".$src. "\" " .$attributes.">";
         return $component;
 
     }
@@ -187,6 +184,20 @@ class Basic_components{
         echo $component;
     }
 
+    function printContainer(string $body, string $attributes = null){
+        $component = "<div ". $attributes . ">".$body. "</div>";
+        echo $component;
+    }
+
+    function printContainerByArray(array $body, string $attributes = null){
+        $content = "";
+        foreach ($body as $element){
+            $content .= $element;
+        }
+        $component = "<div ". $attributes .  ">". $content. "</div>";
+        echo $component;
+    }
+
     function printInput(string $attributes = null){
         $component ="<input ".$attributes.">";
         echo $component;
@@ -201,8 +212,9 @@ class Basic_components{
         echo $component;
 
     }
-    function printImg(string $attributes = null){
-        $component = "<img ".$attributes.">";
+
+    function printImg(string $src, string $attributes = null){
+        $component = "<img src=\"".$src. "\" " .$attributes.">";
         echo $component;
 
     }

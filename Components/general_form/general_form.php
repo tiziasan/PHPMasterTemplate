@@ -1,6 +1,6 @@
 <?php
 class general_form{
-    function createGeneralForm(string $attributes){
+    function createGeneralForm(string $attributes = null){
        $component = "
 <div class=\"form-container\">
     <form class=\"form-style\" ".$attributes.">
@@ -24,7 +24,7 @@ class general_form{
         return $component;
     }
 
-    function printGeneralForm(string $attributes){
+    function printGeneralForm(string $attributes = null){
         $component = "
 <div class=\"form-container\">
     <form class=\"form-style\" ".$attributes.">
