@@ -9,11 +9,13 @@ include "Components/footer/footer.php";
 
 $arrayButton = array(
     "Home" => "#",
-    "Tutte le Ricette" => "/PHPMasterTemplate/SitoRicette.php",
-    "Contattaci" => "/PHPMasterTemplate/SitoRicetteContatti.php",
+    "Tutte le Ricette" => "./SitoRicette.php",
+    "Contattaci" => "./SitoRicetteContatti.php",
 );
 
-$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png","https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg","https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_1280.jpg");
+$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png",
+    "https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg",
+    "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_1280.jpg");
 
 
 $basic = new Basic_components();
