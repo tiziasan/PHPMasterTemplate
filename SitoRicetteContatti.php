@@ -9,9 +9,9 @@ include "Components/general_form/general_form.php";
 include "Components/one_column_div/one_column_div.php";
 
 $arrayButton = array(
-    "Home" => "/PHPMasterTemplate/SitoRicette.php",
-    "Tutte le Ricette" => "/PHPMasterTemplate/SitoRicette.php",
-    "Contattaci" => "/PHPMasterTemplate/SitoRicetteContatti.php",
+    "Home" => "./SitoRicette.php",
+    "Tutte le Ricette" => "./SitoRicette.php",
+    "Contattaci" => "./SitoRicetteContatti.php",
 );
 
 $basic = new Basic_components();

@@ -9,11 +9,13 @@ include "Components/footer/footer.php";
 
 $arrayButton = array(
     "Home" => "#",
-    "Tutte le Ricette" => "/PHPMasterTemplate/SitoRicette.php",
-    "Contattaci" => "/PHPMasterTemplate/SitoRicetteContatti.php",
+    "Tutte le Ricette" => "./SitoRicette.php",
+    "Contattaci" => "./SitoRicetteContatti.php",
 );
 
-$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png","https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg","https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_1280.jpg");
+$images = array("https://upload.wikimedia.org/wikipedia/it/8/83/No_immagini.png",
+    "https://www.pcprofessionale.it/wp-content/uploads/2018/12/Colori-negativi.jpg",
+    "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_1280.jpg");
 
 
 $basic = new Basic_components();
@@ -23,7 +25,7 @@ $headerMenu = new header_menu();
 $headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","#","#40c4ff");
 
 $title = new Basic_components();
-$title = $title -> printH1("Benvenuti al nostro blog dio cucina","style='color:#2196f3;text-align:center;'");
+$title = $title -> printH1("Benvenuti al nostro blog di cucina","style='color:#2196f3; text-align:center;'");
 $subtitle = new Basic_components();
 $subtitle = $subtitle -> printH3("Nel blog Pensieri e Fornelli trovate una serie di ricette illustrate con foto. Antipasti, dolci, primi piatti, secondi, finger food e ricette per bambini. Come riporta il sito, gli autori, un’appassionata di cucina e un abile programmatore, si rivolgono a chi “non mette le sottilette nella parmigiana di melanzane.”","style='color:#2196f3; text-align:center; margin-left: 170px; margin-right: 170px'");
 
