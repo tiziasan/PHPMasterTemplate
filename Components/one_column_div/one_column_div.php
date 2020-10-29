@@ -1,8 +1,14 @@
 <?php
 
 class one_column_div{
-
     function setOneColumnDiv(string $object1){
+        $component = '<div class="row">
+                          <div class="column column-1">'.$object1.'</div>
+                      </div>';
+        return $component;
+    }
+
+    function printOneColumnDiv(string $object1){
         $component = '<div class="row">
                           <div class="column column-1">'.$object1.'</div>
                       </div>';
