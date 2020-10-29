@@ -25,7 +25,7 @@ $headerMenu = new header_menu();
 $headerMenu ->showHeaderMenu($arrayButton,"Cucina 2.0","#",'cerca.php',"#40c4ff");
 
 $title = new Basic_components();
-$title = $title -> printH1("Benvenuti al nostro blog dio cucina","style='color:#2196f3;text-align:center;'");
+$title = $title -> printH1("Benvenuti al nostro blog di cucina","style='color:#2196f3;text-align:center;'");
 $subtitle = new Basic_components();
 $subtitle = $subtitle -> printH3("Nel blog Pensieri e Fornelli trovate una serie di ricette illustrate con foto. Antipasti, dolci, primi piatti, secondi, finger food e ricette per bambini. Come riporta il sito, gli autori, un’appassionata di cucina e un abile programmatore, si rivolgono a chi “non mette le sottilette nella parmigiana di melanzane.”","style='color:#2196f3; text-align:center; margin-left: 170px; margin-right: 170px'");
 
