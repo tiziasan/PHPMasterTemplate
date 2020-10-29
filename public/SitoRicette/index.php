@@ -39,7 +39,7 @@ $card3 = new recipe_card();
 $card3 = $card3 -> showRecipeCard("Cheescake ai frutti rossi", "15 minuti", "4 porzioni", "Media", "Un dolce americano cremoso e sfizioso che piace in tutto il mondo!","Scopri la ricetta!","http://www.google.it", "https://images.fidhouse.com/fidelitynews/wp-content/uploads/sites/6/2014/05/fredda3.jpg");
 
 $div3col = new three_column_div();
-$div3col ->setThreeColumnDiv($card1, $card2, $card3);
+$div3col -> printThreeColumnDiv($card1, $card2, $card3);
 
 $card4 = new recipe_card();
 $card4 = $card4 -> showRecipeCard("Latte e cereali", "5 minuti", "1 porzione", "Facile", "SQuale miglior modo di iniziare la giornata?!","Scopri la ricetta!","http://www.google.it", "https://www.colazionesalutare.it/wp-content/uploads/2019/03/colazione-latte-e-cereali.jpg");
@@ -51,7 +51,7 @@ $card6 = new recipe_card();
 $card6 = $card6 -> showRecipeCard("Bistecca", "20 minuti", "3 porzioni", "Media", "Cottura al sangue? prepariamo la bistecca perfetta!!","Scopri la ricetta!","http://www.google.it", "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2015/06/bistecca-alla-fiorentina/jcr:content/imagePreview.img10.jpg/1435132063681.jpg");
 
 $div3col2 = new three_column_div();
-$div3col2 ->setThreeColumnDiv($card4, $card5, $card6);
+$div3col2 -> printThreeColumnDiv($card4, $card5, $card6);
 
 
 $footer =  new footer();

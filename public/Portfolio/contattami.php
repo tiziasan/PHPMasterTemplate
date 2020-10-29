@@ -27,7 +27,7 @@ $form = new general_form();
 $form = $form-> createGeneralForm('test');
 
 $div = new one_column_div();
-$div -> setOneColumnDiv($form);
+$div -> printOneColumnDiv($form);
 
 
 $footer = new footer();

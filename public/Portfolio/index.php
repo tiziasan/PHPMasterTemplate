@@ -56,7 +56,7 @@ $img = new Basic_components();
 $img = $img -> setImg("https://casaegiardino.info/wp-content/uploads/2020/04/Casa-e-Giardino-Sergio_0581-1067x800.jpg");
 
 $col2 = new two_column_div();
-$col2 ->setTwoColumnDiv($img, $info);
+$col2 -> printTwoColumnDiv($img, $info);
 
 
 

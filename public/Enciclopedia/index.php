@@ -4,6 +4,7 @@ ini_set("display_errors","On");
 
 include_once "../../Components/basic_components/basic_components.php";
 include_once "../../Components/header_menu/header_menu.php";
+include_once "../../Components/one_column_div/one_column_div.php";
 include_once "../../Components/two_column_div/two_column_div.php";
 include_once "../../Components/three_column_div/three_column_div.php";
 include_once "../../Components/recipe_card/recipe_card.php";
@@ -49,17 +50,24 @@ $list = new Basic_components();
 $list = $list -> setListElement($arrayList);
 
 $para = $para.$list;
+
 $div = new two_column_div();
-$div -> setTwoColumnDiv($para, $bookImg, "style='background-color: #66bb6a; padding-left: 10%; padding-right: 10%;'");
+$div -> printTwoColumnDiv($para, $bookImg, "style='background-color: #66bb6a; padding-left: 10%; padding-right: 10%;'");
 
 $para2 = new Basic_components();
-$para2 = $para2 -> setParagraph("Puoi avere l'intera raccolta al prezzo speciale di 150 euro iva inclusa. Per i primi 100 clienti in omaggio anche la nostra guida sui migliori ristoranti Italiani!");
+$para2 = $para2 -> setParagraph("Puoi avere l'intera raccolta al prezzo speciale di 150 euro iva inclusa. Per i primi 100 clienti in omaggio anche la nostra guida sui migliori ristoranti Italiani!", "style='text-align: center'");
+
+$center_p = new three_column_div();
+$center_p = $center_p ->setThreeColumnDiv("",$para2,"");
 
 $pay = new payment_form();
 $pay = $pay -> inset_payment_form();
 
-$div2 = new two_column_div();
-$div2 -> setTwoColumnDiv($para2, $pay);
+$container = new Basic_components();
+$container = $container->setContainerByArray([$center_p, $pay]);
+
+$row = new one_column_div();
+$row -> printOneColumnDiv($container);
 
 
 
