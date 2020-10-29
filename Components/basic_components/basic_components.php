@@ -49,7 +49,12 @@ class Basic_components{
         return $component;
     }
 
-    function setContainer(array $body, string $attributes = null){
+    function setContainer(string $body, string $attributes = null){
+        $component = "<div ". $attributes . ">".$body. "</div>";
+        return $component;
+    }
+
+    function setContainerByArray(array $body, string $attributes = null){
         $component = "<div ". $attributes .  ">";
         foreach ($body as $element){
             $component .= $element;
@@ -178,13 +183,18 @@ class Basic_components{
         echo $component;
     }
 
-    function printContainer(array $body, string $attributes = null){
+    function printContainer(string $body, string $attributes = null){
+        $component = "<div ". $attributes . ">".$body. "</div>";
+        echo $component;
+    }
+
+    function printContainerByArray(array $body, string $attributes = null){
         $content = "";
         foreach ($body as $element){
             $content .= $element;
         }
         $component = "<div ". $attributes .  ">". $content. "</div>";
-        return $component;
+        echo $component;
     }
 
     function printInput(string $attributes = null){
