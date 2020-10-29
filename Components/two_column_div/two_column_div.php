@@ -9,3 +9,4 @@ class two_column_div{
         echo $component;
     }
 }
+
