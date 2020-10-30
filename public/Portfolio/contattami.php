@@ -7,6 +7,8 @@ include "../../Components/header_menu/header_menu.php";
 include "../../Components/footer/footer.php";
 include "../../Components/general_form/general_form.php";
 include "../../Components/one_column_div/one_column_div.php";
+include "../../Components/two_column_div/two_column_div.php";
+include "../../Components/map/map.php";
 
 $arrayButton = array(
     "Home" => "./index.php",
@@ -23,11 +25,20 @@ $headerMenu ->showHeaderMenu($arrayButton,"Arch. Mario Rossi","./index.php","#ff
 $title = new Basic_components();
 $title -> printH1("Vogliamo collaborare per costruire insieme grandi opere? Contattami!","style='color:#2196f3;text-align:center;'");
 
+$mapTitle = new Basic_components();
+$mapTitle = $mapTitle -> setH3("Vienici a trovare nel nostro studio situato all'Aquila, saremo lieti di offrirti la miglior soluzione al prezzo più conveniente!","style='color:#2196f3;text-align:center;'");
+
 $form = new general_form();
 $form = $form-> createGeneralForm('test');
 
 $div = new one_column_div();
 $div -> printOneColumnDiv($form);
+
+$map = new map();
+$map = $map ->setMap("università degli studi dell'aquila, via vetoio");
+
+$div1 = new two_column_div();
+$div1 -> printTwoColumnDiv($mapTitle, $map);
 
 
 $footer = new footer();
