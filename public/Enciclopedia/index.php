@@ -18,7 +18,7 @@ $basic = new Basic_components();
 $basic->setHead("Enciclopedia della storia Italiana");
 
 $headerMenu = new header_menu();
-$headerMenu ->showHeaderMenu($arrayButton,"Enciclopedia della storia Italiana","./index.php","#388e3c");
+$headerMenu ->showHeaderMenu($arrayButton,"Enciclopedia della storia Italiana","./index.php","#388e3c","#1b5e20");
 
 $title = new Basic_components();
 $title -> printH1("Enciclopedia della storia Italiana","style='color:#1b5e20;text-align:center;'");
